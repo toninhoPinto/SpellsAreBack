@@ -1,23 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using PDollarGestureRecognizer;
+using System.IO;
 
 public class DrawingManager : MonoBehaviour {
     private MyMouseLook mouselookScript;
     private MyCharController charControllerScript;
 
     public GameObject canvas;
+    public float chalkTotal = 100f;
+    public float chalkAmmount = 100f;
+    public float chalkSpendRate = 1f;
 
     public bool drawing;
     public bool mouseInside;
     Vector3 mousePos;
-    private List<Vector2> points;
-    private int vertexCount = 0;
+    private List<List<Point>> newGestures;
+    private List<Point> currLinePoints;
+    private bool newLine;
+    private List<Result> resultingGestures;
+    private List<Gesture> trainingSet = new List<Gesture>();
 
     public MyLineRenderer currentGestureLineRenderer;
     public float ZLineCoord;
     public GameObject character;
     public GameObject scroll;
+    public Slider chalkSlide;
 
     // Use this for initialization
     void Start () {
@@ -25,7 +35,18 @@ public class DrawingManager : MonoBehaviour {
         charControllerScript = character.GetComponent<MyCharController>();
         drawing = false;
         mouseInside = false;
-        points = new List<Vector2>();
+        currLinePoints = new List<Point>();
+        newGestures = new List<List<Point>>();
+
+        //Load pre-made gestures
+        TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet/10-stylus-MEDIUM/");
+        foreach (TextAsset gestureXml in gesturesXml)
+            trainingSet.Add(GestureIO.ReadGestureFromXML(gestureXml.text));
+
+        //Load user custom gestures
+        string[] filePaths = Directory.GetFiles(Application.persistentDataPath, "*.xml");
+        foreach (string filePath in filePaths)
+            trainingSet.Add(GestureIO.ReadGestureFromFile(filePath));
     }
 	
 	// Update is called once per frame
@@ -45,11 +66,6 @@ public class DrawingManager : MonoBehaviour {
                 currentGestureLineRenderer.resetMesh();
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            currentGestureLineRenderer.printVertices();
-        }
-
         if (drawing)
         {
             mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10f);
@@ -61,23 +77,41 @@ public class DrawingManager : MonoBehaviour {
             }
             else mouseInside = false;
 
-            if (mouseInside)
+            if (Input.GetMouseButtonUp(0))
+            {
+                newLine = true;
+                newGestures.Add(currLinePoints);
+                recognizeLatestGesture(currLinePoints);
+                currLinePoints = new List<Point>();
+            }
+
+            if (mouseInside && chalkAmmount > 0)
             {
                 Vector3 camVector = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane + 0.5f));
                 if (Input.GetMouseButtonDown(0))
                 {
-                    points.Add(mousePos);
-                    currentGestureLineRenderer.SetPosition(camVector);
+                    currLinePoints.Add(new Point(mousePos.x, mousePos.y));
+                    currentGestureLineRenderer.SetPosition(camVector, newLine);
+                    newLine = false;
                 }
 
                 if (Input.GetMouseButton(0))
                 {
-                    points.Add(mousePos);
-                    currentGestureLineRenderer.SetPosition(camVector);
+                    chalkAmmount -= chalkSpendRate * 15 * Time.deltaTime;
+                    chalkSlide.value = chalkAmmount/chalkTotal;
+                    currLinePoints.Add(new Point(mousePos.x, mousePos.y));
+                    currentGestureLineRenderer.SetPosition(camVector, newLine);
                 }
             }
         }
 
+    }
+
+    public void recognizeLatestGesture(List<Point> gesture)
+    {
+        Gesture candidate = new Gesture(gesture.ToArray());
+        Result gestureResult = PointCloudRecognizer.Classify(candidate, trainingSet.ToArray());
+        Debug.Log(gestureResult.GestureClass);
     }
 
 }

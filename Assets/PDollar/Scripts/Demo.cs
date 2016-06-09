@@ -82,7 +82,7 @@ public class Demo : MonoBehaviour {
 			}
 			
 			if (Input.GetMouseButton(0)) {
-				points.Add(new Point(virtualKeyPosition.x, -virtualKeyPosition.y, strokeId));
+				points.Add(new Point(virtualKeyPosition.x, -virtualKeyPosition.y));
 
 				currentGestureLineRenderer.SetVertexCount(++vertexCount);
 				currentGestureLineRenderer.SetPosition(vertexCount - 1, Camera.main.ScreenToWorldPoint(new Vector3(virtualKeyPosition.x, virtualKeyPosition.y, 10)));

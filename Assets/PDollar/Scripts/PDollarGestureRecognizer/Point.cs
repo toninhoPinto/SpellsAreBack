@@ -67,14 +67,12 @@ namespace PDollarGestureRecognizer
     /// </summary>
     public class Point
     {
-        public float X, Y;
-        public int StrokeID;      
+        public float X, Y;   
 
-        public Point(float x, float y, int strokeId)
+        public Point(float x, float y)
         {
             this.X = x;
             this.Y = y;
-            this.StrokeID = strokeId;
         }
     }
 }

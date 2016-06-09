@@ -9,6 +9,7 @@ public class MyLineRenderer : MonoBehaviour {
     private List<Vector3> newVertices;
     private List<int> newTriangles;
     private List<Vector2> newUV;
+    private float pointsBeforeNewLine;
 
     private Mesh mesh;
     private MeshRenderer meshRenderer;
@@ -29,16 +30,20 @@ public class MyLineRenderer : MonoBehaviour {
         points = new List<Vector3>();
         newTriangles = new List<int>();
         newUV = new List<Vector2>();
+        pointsBeforeNewLine = 0;
     }
 
-    public void SetPosition(Vector3 newPos)
+    public void SetPosition(Vector3 newPos, bool newLine)
     {
         if (points.Count > 0 && newPos == points[points.Count - 1])
             return;
-        
+
+        if (newLine)
+            pointsBeforeNewLine = points.Count;
+
         points.Add(newPos);
 
-        if (points.Count == 1)
+        if (points.Count - pointsBeforeNewLine == 1)
             return;
 
         Vector3 lastPoint = points[points.Count - 2];
@@ -59,7 +64,7 @@ public class MyLineRenderer : MonoBehaviour {
         mesh.vertices = newVertices.ToArray();
 
         //tries
-        if (points.Count == 2)
+        if (points.Count - pointsBeforeNewLine == 2)
         {
             newTriangles.Add(0);
             newTriangles.Add(2);
@@ -95,17 +100,6 @@ public class MyLineRenderer : MonoBehaviour {
         mesh.uv = newUV.ToArray();
         mesh.Optimize();
         mesh.RecalculateNormals();
-    }
-
-    public void printVertices()
-    {
-        for (int i = 0; i < points.Count; i++)
-            Debug.Log(points[i]);
-
-        Debug.Log("========================================================");
-
-        for (int i = 0; i < newVertices.Count; i++)
-            Debug.Log(newVertices[i]);
     }
 
     /*

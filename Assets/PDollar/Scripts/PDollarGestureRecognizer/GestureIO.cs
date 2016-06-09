@@ -59,7 +59,6 @@ namespace PDollarGestureRecognizer
 		private static Gesture ReadGesture(XmlTextReader xmlReader)
         {
             List<Point> points = new List<Point>();
-            int currentStrokeIndex = -1;
             string gestureName = "";
             try
             {
@@ -75,14 +74,10 @@ namespace PDollarGestureRecognizer
                             if (gestureName.Contains("_")) // '_' character is specific to the naming convention of the MMG set
                                 gestureName = gestureName.Replace('_', ' ');
                             break;
-                        case "Stroke":
-                            currentStrokeIndex++;
-                            break;
                         case "Point":
                             points.Add(new Point(
                                 float.Parse(xmlReader["X"]),
-                                float.Parse(xmlReader["Y"]),
-                                currentStrokeIndex
+                                float.Parse(xmlReader["Y"])
                             ));
                             break;
                     }
@@ -105,22 +100,12 @@ namespace PDollarGestureRecognizer
             {
                 sw.WriteLine("<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>");
                 sw.WriteLine("<Gesture Name = \"{0}\">", gestureName);
-                int currentStroke = -1;
                 for (int i = 0; i < points.Length; i++)
                 {
-                    if (points[i].StrokeID != currentStroke)
-                    {
-                        if (i > 0)
-                            sw.WriteLine("\t</Stroke>");
-                        sw.WriteLine("\t<Stroke>");
-                        currentStroke = points[i].StrokeID;
-                    }
-
                     sw.WriteLine("\t\t<Point X = \"{0}\" Y = \"{1}\" T = \"0\" Pressure = \"0\" />",
                         points[i].X, points[i].Y
                     );
                 }
-                sw.WriteLine("\t</Stroke>");
                 sw.WriteLine("</Gesture>");
             }
         }
