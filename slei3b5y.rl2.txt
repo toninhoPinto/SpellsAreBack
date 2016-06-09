@@ -1,0 +1,1223 @@
+﻿hi here
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#	new file:   .vs/SpellsAreBack/v14/.suo
+#	new file:   Assembly-CSharp.csproj
+#	new file:   Assets/Downloaded.unity
+#	new file:   Assets/Downloaded.unity.meta
+#	new file:   Assets/FireNew.mat
+#	new file:   Assets/FireNew.mat.meta
+#	new file:   Assets/New Material.mat
+#	new file:   Assets/New Material.mat.meta
+#	new file:   Assets/Scripts.meta
+#	new file:   Assets/Scripts/CastSoulArrows.cs
+#	new file:   Assets/Scripts/CastSoulArrows.cs.meta
+#	new file:   Assets/Scripts/ThrowScrolls.cs
+#	new file:   Assets/Scripts/ThrowScrolls.cs.meta
+#	new file:   Assets/Scroll.meta
+#	new file:   Assets/Scroll/Materials.meta
+#	new file:   Assets/Scroll/Materials/Material #115.mat
+#	new file:   Assets/Scroll/Materials/Material #115.mat.meta
+#	new file:   Assets/Scroll/Scroll.cs
+#	new file:   Assets/Scroll/Scroll.cs.meta
+#	new file:   Assets/Scroll/Scroll.prefab
+#	new file:   Assets/Scroll/Scroll.prefab.meta
+#	new file:   Assets/Scroll/roll.3DS
+#	new file:   Assets/Scroll/roll.3DS.meta
+#	new file:   Assets/Soul Arrow.meta
+#	new file:   Assets/Soul Arrow/SoulArrowManager.prefab
+#	new file:   Assets/Soul Arrow/SoulArrowManager.prefab.meta
+#	new file:   Assets/Soul Arrow/Sphere.prefab
+#	new file:   Assets/Soul Arrow/Sphere.prefab.meta
+#	new file:   Assets/Soul Arrow/soul arrow.mat
+#	new file:   Assets/Soul Arrow/soul arrow.mat.meta
+#	new file:   Assets/SpellCraft Assets.meta
+#	new file:   Assets/SpellCraft Assets/Demo.meta
+#	new file:   Assets/SpellCraft Assets/Demo/Prefabs.meta
+#	new file:   Assets/SpellCraft Assets/Demo/Prefabs/Ground.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/Prefabs/Ground.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/Scripts.meta
+#	new file:   Assets/SpellCraft Assets/Demo/Scripts/SC_ClickButton.cs
+#	new file:   Assets/SpellCraft Assets/Demo/Scripts/SC_ClickButton.cs.meta
+#	new file:   Assets/SpellCraft Assets/Demo/Scripts/SC_EffectsModeDemo.cs
+#	new file:   Assets/SpellCraft Assets/Demo/Scripts/SC_EffectsModeDemo.cs.meta
+#	new file:   Assets/SpellCraft Assets/Demo/Scripts/SC_ToggleButton.cs
+#	new file:   Assets/SpellCraft Assets/Demo/Scripts/SC_ToggleButton.cs.meta
+#	new file:   Assets/SpellCraft Assets/Demo/Scripts/SC_Translate.cs
+#	new file:   Assets/SpellCraft Assets/Demo/Scripts/SC_Translate.cs.meta
+#	new file:   Assets/SpellCraft Assets/Demo/SpellCraft Effects Demo.unity
+#	new file:   Assets/SpellCraft Assets/Demo/SpellCraft Effects Demo.unity.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Arrow Info Label.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Arrow Info Label.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Next Spell Button.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Next Spell Button.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Previous Spell Button.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Previous Spell Button.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Reset Camera Button Highlight.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Reset Camera Button Highlight.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Scroll Button Highlight.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Scroll Button Highlight.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Spawn Spell Button Highlight.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Spawn Spell Button Highlight.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Spell Index Label.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Spell Index Label.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Spell Name Label.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Spell Name Label.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/SpellCraft Logo.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/SpellCraft Logo.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Toggle Ground Button.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Toggle Ground Button.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Toggle Rotation Button.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Toggle Rotation Button.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Toggle Slow Button.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Toggle Slow Button.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Toggle UI Label.prefab
+#	new file:   Assets/SpellCraft Assets/Demo/UI Prefabs/Toggle UI Label.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Examples Mode Button.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Examples Mode Button.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/FX Mode Button.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/FX Mode Button.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Mouse Icon Left Highlight.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Mouse Icon Left Highlight.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Mouse Icon Right Highlight.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Mouse Icon Right Highlight.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Mouse Icon Scroll Highlight.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Mouse Icon Scroll Highlight.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Mouse Icon.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Mouse Icon.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Slow Button.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Slow Button.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/SpellCraft Icon.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/SpellCraft Icon.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/SpellCraft Lite Logo.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/SpellCraft Lite Logo.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/SpellCraft Next Arrow.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/SpellCraft Next Arrow.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/SpellCraft Previous Arrow.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/SpellCraft Previous Arrow.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Toggle Ground Button Disabled.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Toggle Ground Button Disabled.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Toggle Ground Button.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Toggle Ground Button.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Toggle Rotation Button Disabled.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Toggle Rotation Button Disabled.png.meta
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Toggle Rotation Button.png
+#	new file:   Assets/SpellCraft Assets/Demo/UI Textures/Toggle Rotation Button.png.meta
+#	new file:   Assets/SpellCraft Assets/Scripts.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/Helpers.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/Helpers/SC_Helper.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/Helpers/SC_Helper.cs.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_Billboard.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_Billboard.cs.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_FadeOut.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_FadeOut.cs.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_OnClickGround.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_OnClickGround.cs.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_Projectile.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_Projectile.cs.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_RandomDirection.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_RandomDirection.cs.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_Rotation.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_Rotation.cs.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_ScaleOverTime.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_ScaleOverTime.cs.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_Siny.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_Siny.cs.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_SpawnSpellLocationGround.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_SpawnSpellLocationGround.cs.meta
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_SpellDuration.cs
+#	new file:   Assets/SpellCraft Assets/Scripts/SC_SpellDuration.cs.meta
+#	new file:   Assets/SpellCraft Assets/Source.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ArmourAura_1.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ArmourAura_1.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ArmourAura_2.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ArmourAura_2.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ArmourAura_3.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ArmourAura_3.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Arrow.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Arrow.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Blade.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Blade.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/BladeFade.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/BladeFade.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/CircleDark.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/CircleDark.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/CircleDark_2.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/CircleDark_2.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Black.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Black.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/BlackAdditive.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/BlackAdditive.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Blue 1.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Blue 1.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Blue.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Blue.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Brown.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Brown.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Green.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Green.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Orange.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Orange.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Pink.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Pink.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Purple.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Purple.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Red 1.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Red 1.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Red.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Red.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Teal.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Teal.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Yellow.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Colors/Yellow.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Cone.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Cone.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ConeBlue.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ConeBlue.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ConeIce.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ConeIce.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Fire.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Fire.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/FireRing.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/FireRing.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/FireRingLarge.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/FireRingLarge.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/FireRingLargeGlow.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/FireRingLargeGlow.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/FireSpark.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/FireSpark.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Fire_2.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Fire_2.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Floor_2.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Floor_2.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowCone.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowCone.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowConeThin.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowConeThin.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowInner.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowInner.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowLine.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowLine.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowLine_2.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowLine_2.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowOval.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowOval.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowOval2.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowOval2.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingFade.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingFade.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingSpikes.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingSpikes.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingSpikesInner.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingSpikesInner.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingThickOuter.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingThickOuter.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingThin.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingThin.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingThinOuter.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowRingThinOuter.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowSoft.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowSoft.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowSoftWavy.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowSoftWavy.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowSoftWwavyGrey.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowSoftWwavyGrey.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowSunBurst.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowSunBurst.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowSwirl.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowSwirl.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowTriangle.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/GlowTriangle.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/SelectionRing.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/SelectionRing.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ThornAura.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/ThornAura.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/TinyLine.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/TinyLine.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Zzz.mat
+#	new file:   Assets/SpellCraft Assets/Source/Materials/Zzz.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Mesh.meta
+#	new file:   Assets/SpellCraft Assets/Source/Mesh/Arrow.fbx
+#	new file:   Assets/SpellCraft Assets/Source/Mesh/Arrow.fbx.meta
+#	new file:   Assets/SpellCraft Assets/Source/Mesh/Cone.fbx
+#	new file:   Assets/SpellCraft Assets/Source/Mesh/Cone.fbx.meta
+#	new file:   Assets/SpellCraft Assets/Source/Mesh/Materials.meta
+#	new file:   Assets/SpellCraft Assets/Source/Mesh/Materials/Material.mat
+#	new file:   Assets/SpellCraft Assets/Source/Mesh/Materials/Material.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Mesh/Materials/No Name.mat
+#	new file:   Assets/SpellCraft Assets/Source/Mesh/Materials/No Name.mat.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ArmourAura1.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ArmourAura1.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ArmourAura2.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ArmourAura2.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ArmourAura3.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ArmourAura3.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Arrow.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Arrow.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Blade.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Blade.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/BladeFade.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/BladeFade.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/CircleDark.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/CircleDark.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/CircleDark2.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/CircleDark2.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Cone.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Cone.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ConeBlue.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ConeBlue.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ConeIce.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ConeIce.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Fire1.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Fire1.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Fire2.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Fire2.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/FireRing.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/FireRing.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/FireRingLarge.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/FireRingLarge.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/FireSpark.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/FireSpark.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Floor_05.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Floor_05.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Glow.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/Glow.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowCone.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowCone.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowConeThin.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowConeThin.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowInner.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowInner.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowLine.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowLine.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowLine2.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowLine2.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowOval.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowOval.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowOval2.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowOval2.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingFade.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingFade.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingSpikes.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingSpikes.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingSpikesInner.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingSpikesInner.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingThickOuter.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingThickOuter.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingThin.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingThin.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingThinOuter.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowRingThinOuter.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowShadow.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowShadow.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowSoft.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowSoft.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowSoftWavy.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowSoftWavy.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowSoftWavyAlpha.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowSoftWavyAlpha.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowSunBurst.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowSunBurst.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowSwirl.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowSwirl.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowTriangle.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/GlowTriangle.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/SelectionRing.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/SelectionRing.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/SleepSymbol.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/SleepSymbol.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ThornAura.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/ThornAura.png.meta
+#	new file:   Assets/SpellCraft Assets/Source/Textures/TinyLine.png
+#	new file:   Assets/SpellCraft Assets/Source/Textures/TinyLine.png.meta
+#	new file:   Assets/SpellCraft Assets/Spells.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/ArmourAura.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/ArmourAura/SCEffects_ArmourAura.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/ArmourAura/SCEffects_ArmourAura.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/ArmourAura/SCSpell_ArmourAura.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/ArmourAura/SCSpell_ArmourAura.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BladeWhirlwind.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BladeWhirlwind/SCEffects_BladeWhirlwind.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BladeWhirlwind/SCEffects_BladeWhirlwind.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BladeWhirlwind/SCSpell_BladeWhirlwind.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BladeWhirlwind/SCSpell_BladeWhirlwind.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BurnGreen.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BurnGreen/SCEffects_Burn_Green.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BurnGreen/SCEffects_Burn_Green.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BurnGreen/SCSpell_Burn_Green.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BurnGreen/SCSpell_Burn_Green.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BurnRed.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BurnRed/SCEffects_Burn_Red.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BurnRed/SCEffects_Burn_Red.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BurnRed/SCSpell_Burn_Red.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/BurnRed/SCSpell_Burn_Red.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Exile.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Exile/SCEffects_Exile.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Exile/SCEffects_Exile.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Exile/SCSpell_Exile.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Exile/SCSpell_Exile.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/IceArrow.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/IceArrow/SCEffects_IceArrow.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/IceArrow/SCEffects_IceArrow.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/IceArrow/SCSpell_IceArrow.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/IceArrow/SCSpell_IceArrow.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Sleep.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Sleep/SCEffects_Sleep.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Sleep/SCEffects_Sleep.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Sleep/SCSpell_Sleep.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Sleep/SCSpell_Sleep.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Slow.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Slow/SCEffects_Slow.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Slow/SCEffects_Slow.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Slow/SCSpell_Slow.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Slow/SCSpell_Slow.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Stun.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Stun/SCEffects_Stun.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Stun/SCEffects_Stun.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Stun/SCSpell_Stun.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/Stun/SCSpell_Stun.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/ThornAura.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/ThornAura/SCEffects_ThornAura.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/ThornAura/SCEffects_ThornAura.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/ThornAura/SCSpell_ThornAura.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/Effects/ThornAura/SCSpell_ThornAura.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/Misc.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/Misc/SC_LightningLight_LR.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/Misc/SC_LightningLight_LR.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/Misc/SC_Lightning_LR.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/Misc/SC_Lightning_LR.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_ArmourAura.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_ArmourAura.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_BladeWhirlwind.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_BladeWhirlwind.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Burn_Green.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Burn_Green.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Burn_Red.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Burn_Red.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Exile.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Exile.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_IceArrow.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_IceArrow.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Sleep.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Sleep.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Slow.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Slow.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Stun.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_Stun.prefab.meta
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_ThornAura.prefab
+#	new file:   Assets/SpellCraft Assets/Spells/FX/SCFX_ThornAura.prefab.meta
+#	new file:   Assets/TestScene.unity
+#	new file:   Assets/TestScene.unity.meta
+#	new file:   Assets/readme.txt
+#	new file:   Assets/readme.txt.meta
+#	new file:   Library/AnnotationManager
+#	new file:   Library/AssetImportState
+#	new file:   Library/AssetServerCacheV3
+#	new file:   Library/AssetVersioning.db
+#	new file:   Library/BuildPlayer.prefs
+#	new file:   Library/BuildSettings.asset
+#	new file:   Library/CurrentLayout.dwlt
+#	new file:   Library/EditorUserBuildSettings.asset
+#	new file:   Library/EditorUserSettings.asset
+#	new file:   Library/InspectorExpandedItems.asset
+#	new file:   Library/LastSceneManagerSetup.txt
+#	new file:   Library/LibraryFormatVersion.txt
+#	new file:   Library/MonoManager.asset
+#	new file:   Library/ProjectSettings.asset
+#	new file:   Library/ScriptAssemblies/Assembly-CSharp.dll
+#	new file:   Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+#	new file:   Library/ScriptAssemblies/BuiltinAssemblies.stamp
+#	new file:   Library/ScriptMapper
+#	new file:   Library/ShaderCache.db
+#	new file:   Library/ShaderCache/0/001be899f47b802a8ee35bcf5c1d8262.bin
+#	new file:   Library/ShaderCache/0/0081cd2a38e60298aaa9805c585d72ea.bin
+#	new file:   Library/ShaderCache/0/0593da3cd136723e04ed14e3b52af5a9.bin
+#	new file:   Library/ShaderCache/0/0679ec65f9ba579493bb11fbedf1b624.bin
+#	new file:   Library/ShaderCache/0/0682591585123a30de27c42109dc1646.bin
+#	new file:   Library/ShaderCache/0/06f24b6c0695d569555d68bc5280f429.bin
+#	new file:   Library/ShaderCache/0/0892238069f20bc4e3704ab0383a9d30.bin
+#	new file:   Library/ShaderCache/0/0a65a577b250fd08cf0972e51373c677.bin
+#	new file:   Library/ShaderCache/0/0b3b396181f0d1665f042dbb4d1eb1b2.bin
+#	new file:   Library/ShaderCache/0/0d3fd5690b536827a086d62f11df6985.bin
+#	new file:   Library/ShaderCache/0/0dab750b214a97597948bc1d373de280.bin
+#	new file:   Library/ShaderCache/0/0ddf5d4ee627e9f2bf0684efdc25dc7a.bin
+#	new file:   Library/ShaderCache/0/0e31280a3f83ffa99bec2d63bdf82aa8.bin
+#	new file:   Library/ShaderCache/1/11d4b528fedf9b4d37e366a22e513aa4.bin
+#	new file:   Library/ShaderCache/1/127ea14a642659e662cfcfa80a88dbfb.bin
+#	new file:   Library/ShaderCache/1/12a0a5d706fbd756918c2d150c9fe9bb.bin
+#	new file:   Library/ShaderCache/1/1393632b241df27245680dc35b399ef3.bin
+#	new file:   Library/ShaderCache/1/13d135477ae9c73a29191ffd0cb449c4.bin
+#	new file:   Library/ShaderCache/1/13d5ce21a3095ff574944fe052756928.bin
+#	new file:   Library/ShaderCache/1/145c804be4e5d84d997f651454b915d4.bin
+#	new file:   Library/ShaderCache/1/1499e6063923341746246943c29097fb.bin
+#	new file:   Library/ShaderCache/1/152b88b99916374453d8ace5f7262533.bin
+#	new file:   Library/ShaderCache/1/156b6098800362c9a78a666f1a2d35a3.bin
+#	new file:   Library/ShaderCache/1/167ecfd93cbb91f04dbeb87c04c411c0.bin
+#	new file:   Library/ShaderCache/1/17e156aaa4321fa5572e01514edc97e4.bin
+#	new file:   Library/ShaderCache/1/184b547ba814fa00ad22f4b84e66f002.bin
+#	new file:   Library/ShaderCache/1/18819374c8cd9d505c030cfca4b17804.bin
+#	new file:   Library/ShaderCache/1/19510f77a83523719e2f463b708882ae.bin
+#	new file:   Library/ShaderCache/1/1a42b92de82a4fd7fb275631f2c96f75.bin
+#	new file:   Library/ShaderCache/1/1aa1872a074505a98c93d514837667ca.bin
+#	new file:   Library/ShaderCache/1/1d547ba3889af37a47296bbb9eac219e.bin
+#	new file:   Library/ShaderCache/1/1d89853ab28b4a7cf788405d9c815f43.bin
+#	new file:   Library/ShaderCache/1/1e75780fa532852f68d82493892d6eb5.bin
+#	new file:   Library/ShaderCache/2/20328f3b8f4f0890afd74b8234f6fa8e.bin
+#	new file:   Library/ShaderCache/2/216bf2ea72c6facca0b711101fa64412.bin
+#	new file:   Library/ShaderCache/2/22b3d2648ed5b59b139b3fe2f447213d.bin
+#	new file:   Library/ShaderCache/2/236f628f0bff96fbd4280bcc3951d11b.bin
+#	new file:   Library/ShaderCache/2/238578e4ce2020afada42a9b1874c401.bin
+#	new file:   Library/ShaderCache/2/23a0e779357827fe678fea3610aef34c.bin
+#	new file:   Library/ShaderCache/2/23a248b93a846b987fa795844d5f2785.bin
+#	new file:   Library/ShaderCache/2/23bf01b5365780d88052acbec33aad9a.bin
+#	new file:   Library/ShaderCache/2/23d08be0e1c1b2c38e6100725d5208f1.bin
+#	new file:   Library/ShaderCache/2/2445bfbe19ed5410c98c16faff97631c.bin
+#	new file:   Library/ShaderCache/2/24a23d6e5c5cba8e125124d62334d9d5.bin
+#	new file:   Library/ShaderCache/2/299e710ee32a5759537c0fc179c0a348.bin
+#	new file:   Library/ShaderCache/2/2a6ce53c0563bc6bbeb9161376bb5a56.bin
+#	new file:   Library/ShaderCache/2/2c20291c0132d4197811d3089c331753.bin
+#	new file:   Library/ShaderCache/2/2d4b189542d3185a67ed175f1cb03567.bin
+#	new file:   Library/ShaderCache/2/2dc3b78b13bed5261551ae77284b179f.bin
+#	new file:   Library/ShaderCache/2/2dde0750db92a93a2b139504f4afedf0.bin
+#	new file:   Library/ShaderCache/2/2e26b3221748914a03c6c8e25c1d8f11.bin
+#	new file:   Library/ShaderCache/2/2ee1bd566ebb1ac2534f2bb7805d568e.bin
+#	new file:   Library/ShaderCache/2/2f0403cff1b707ec87ca9c0867e308f4.bin
+#	new file:   Library/ShaderCache/2/2f312d790bc16ce331ff7a2c291ded3b.bin
+#	new file:   Library/ShaderCache/3/314aae99e2fc9a86037f076daf43bba6.bin
+#	new file:   Library/ShaderCache/3/31e5886084e883da977dd9aa9184a30e.bin
+#	new file:   Library/ShaderCache/3/32e11416fd87b929195a3ac9446fe7d2.bin
+#	new file:   Library/ShaderCache/3/332605b7cfdfea4a61009b114b17fd05.bin
+#	new file:   Library/ShaderCache/3/33eb55601ccdcc01137887f0eba88b11.bin
+#	new file:   Library/ShaderCache/3/343c1e421837d566626d54d77149f383.bin
+#	new file:   Library/ShaderCache/3/3496b26ab201e321a6cde43fa01cbbeb.bin
+#	new file:   Library/ShaderCache/3/34b156aa7b748aca27105356844602e3.bin
+#	new file:   Library/ShaderCache/3/386a88e973c578a7ba4947a3872209af.bin
+#	new file:   Library/ShaderCache/3/389088c8cccfc98e982d8250e0096e37.bin
+#	new file:   Library/ShaderCache/3/38aa91f9394c92c966b576bdb9f86a62.bin
+#	new file:   Library/ShaderCache/3/38d7790dbc8ed00518d15c0bc2598de0.bin
+#	new file:   Library/ShaderCache/3/3ada0b9b074c1da3cbaebcb13535bf1b.bin
+#	new file:   Library/ShaderCache/3/3b95efda1497176afdac24bad3599765.bin
+#	new file:   Library/ShaderCache/3/3bc0b3e55b246d6676cdf0d8eeb009f4.bin
+#	new file:   Library/ShaderCache/3/3c84cffb7aa648afeb126687056d4030.bin
+#	new file:   Library/ShaderCache/3/3ce57508c66a27111ab09b03cc0f6e78.bin
+#	new file:   Library/ShaderCache/3/3dfc802d89653fde9709739de598d273.bin
+#	new file:   Library/ShaderCache/3/3e43c9382f250b52698860fcaeefe2d1.bin
+#	new file:   Library/ShaderCache/4/407806bb5101cc32b76a407208e5a0fb.bin
+#	new file:   Library/ShaderCache/4/40954d7f8b1db9e180573a726ac0493b.bin
+#	new file:   Library/ShaderCache/4/42a02d045d35cea9ebc267fcf5af36e5.bin
+#	new file:   Library/ShaderCache/4/441f3ec6a817decaed5edfebb3e88965.bin
+#	new file:   Library/ShaderCache/4/4425a5392ef9998b76eb1730b8460005.bin
+#	new file:   Library/ShaderCache/4/4540b5002b6eb9057d24413317c66998.bin
+#	new file:   Library/ShaderCache/4/48115b6c7ad39c5e8f79f389a1dc7969.bin
+#	new file:   Library/ShaderCache/4/487a05413647b4cd81dfc4dfa74ce02c.bin
+#	new file:   Library/ShaderCache/4/4976f90eee0082e4af9469d5bdae399a.bin
+#	new file:   Library/ShaderCache/4/4a16dceeb610164814461fc1f46e3390.bin
+#	new file:   Library/ShaderCache/4/4b1bd9c739f79fc3f6b4361af76ac8b0.bin
+#	new file:   Library/ShaderCache/4/4b5f12b533204f792262428a5a5d20fc.bin
+#	new file:   Library/ShaderCache/4/4b683164bb13234884ec2e7a18f9f0bb.bin
+#	new file:   Library/ShaderCache/4/4ec606600b6309bd5d4bcb13610efbf9.bin
+#	new file:   Library/ShaderCache/4/4f4c53344ab480cfbc7925ebc542c151.bin
+#	new file:   Library/ShaderCache/5/52839bc96c8e56629b9fefc5fe2250fa.bin
+#	new file:   Library/ShaderCache/5/5293bef1565ea5ca09dc6cff39b637f4.bin
+#	new file:   Library/ShaderCache/5/5298a23dd9c9354ac53d0f719ea9f4d4.bin
+#	new file:   Library/ShaderCache/5/57d7ed7a31040532b82478cc921f22b8.bin
+#	new file:   Library/ShaderCache/5/583da42d7c6af0b8a5695a0ab3990af9.bin
+#	new file:   Library/ShaderCache/5/59da2fd24ed0efa6fe5561ffeca3dd16.bin
+#	new file:   Library/ShaderCache/5/59f91987b8d1a6ac39024a0a7590825d.bin
+#	new file:   Library/ShaderCache/5/5a07d5f3390cabc80f946c743a874a04.bin
+#	new file:   Library/ShaderCache/5/5bb75998a5ef65feadcca579dead347d.bin
+#	new file:   Library/ShaderCache/5/5bc9eee5471c191d9da94b2b33aa138a.bin
+#	new file:   Library/ShaderCache/5/5c3039e0c9612503242f6f15c6a67738.bin
+#	new file:   Library/ShaderCache/5/5d027b470e4b9a0cf2c9ec62d4bab53a.bin
+#	new file:   Library/ShaderCache/5/5ea056c622bee3e130e6a76503790437.bin
+#	new file:   Library/ShaderCache/5/5ea7d8338e9a638d94e06c1054d384b9.bin
+#	new file:   Library/ShaderCache/6/6047905429769e5b039c16cb442eeee1.bin
+#	new file:   Library/ShaderCache/6/60ded4253e86cdf90d61d6cf4e17144a.bin
+#	new file:   Library/ShaderCache/6/6125e29ca097340332d6c202cdfe5d50.bin
+#	new file:   Library/ShaderCache/6/61838449aa30ff631acc56a8e9afd312.bin
+#	new file:   Library/ShaderCache/6/65e8cd0f90a9e30bc271dd04109a2911.bin
+#	new file:   Library/ShaderCache/6/664b1d4c6eff4aef6eb4d2b1e4f14de0.bin
+#	new file:   Library/ShaderCache/6/67e87cc86b346de6658d58061e0921ac.bin
+#	new file:   Library/ShaderCache/6/6861befcc8e3f53e2f917d6125ced0ba.bin
+#	new file:   Library/ShaderCache/6/68c5973fe97e0c546ad44f4eb92ecbec.bin
+#	new file:   Library/ShaderCache/6/69df162670f6a2ee019cc8bc58cb849b.bin
+#	new file:   Library/ShaderCache/6/69f086ea07a47ccfe600bebc033c1e34.bin
+#	new file:   Library/ShaderCache/6/6b446b1a709500466898e3b6093fb0b9.bin
+#	new file:   Library/ShaderCache/6/6c1bc6a41f782a147ff8f105fece3acc.bin
+#	new file:   Library/ShaderCache/6/6e0f705628b86b20e53523be4fc9d24f.bin
+#	new file:   Library/ShaderCache/6/6e4a56644929a3e7b753faecf6e16edb.bin
+#	new file:   Library/ShaderCache/7/713d0b9a802c28b3f169c3f22e409977.bin
+#	new file:   Library/ShaderCache/7/71ab90e4758a13170e13e661d8bf1e10.bin
+#	new file:   Library/ShaderCache/7/74fb56c4412e523a11368ca675827ed0.bin
+#	new file:   Library/ShaderCache/7/761615a2884981d6296e2ddab92187ff.bin
+#	new file:   Library/ShaderCache/7/769d515de9e65368d2d591b5bf3cdd52.bin
+#	new file:   Library/ShaderCache/7/770575f206f4d61b5919bc466817dd65.bin
+#	new file:   Library/ShaderCache/7/7a0561d5635bc1d6a430882841286acb.bin
+#	new file:   Library/ShaderCache/7/7b01cccc48e4a6ad2d010542faefd1ec.bin
+#	new file:   Library/ShaderCache/7/7d1893c720bf7e1e7cf2efb6ad7ae036.bin
+#	new file:   Library/ShaderCache/7/7d560eb5849ef6bec86eb10f3db23f9b.bin
+#	new file:   Library/ShaderCache/7/7deacbca6efee69dc75acbaf84e010d2.bin
+#	new file:   Library/ShaderCache/7/7f167071e6a2d2cd4a4fd49028aa75d8.bin
+#	new file:   Library/ShaderCache/7/7fb0e56cef4b4431782c4d837c67eb21.bin
+#	new file:   Library/ShaderCache/8/820a9f0dbeb7efd8216237d6e74a70a0.bin
+#	new file:   Library/ShaderCache/8/838bc002f1521185170ea29830959742.bin
+#	new file:   Library/ShaderCache/8/8397f03bc0fec60ca97ae80f825f09fb.bin
+#	new file:   Library/ShaderCache/8/8570f77946372a5849bada49e3b05196.bin
+#	new file:   Library/ShaderCache/8/883cce6d789068d6461a07c3fbb43203.bin
+#	new file:   Library/ShaderCache/8/895b870034da7aab1835039a7883b16f.bin
+#	new file:   Library/ShaderCache/8/89c550bd9c6db64ac9cd28974699db8f.bin
+#	new file:   Library/ShaderCache/8/8f08992a7e4d93dbcdd02cb825be36ba.bin
+#	new file:   Library/ShaderCache/9/936d72daa21f6d631f89500a031fda62.bin
+#	new file:   Library/ShaderCache/9/95690996869dcdddf32f52457b22f6e7.bin
+#	new file:   Library/ShaderCache/9/989f9177ac100b453596bc65be22234c.bin
+#	new file:   Library/ShaderCache/9/98b2a4c4176d77d8c96ee2e9755f9812.bin
+#	new file:   Library/ShaderCache/9/99db4e3f1b87aa5136d72910ca9a2768.bin
+#	new file:   Library/ShaderCache/9/9a33e07d620e432e9451b65f851e9b54.bin
+#	new file:   Library/ShaderCache/9/9a55a5cbcd78c6d1f35e8b8639005dba.bin
+#	new file:   Library/ShaderCache/9/9ebb7c11e571c71019e313097b9e7ed7.bin
+#	new file:   Library/ShaderCache/9/9f7efadfd77534877e6cce0ed7f43d1a.bin
+#	new file:   Library/ShaderCache/9/9fae3856acde1d2441027524e3f4a7b4.bin
+#	new file:   Library/ShaderCache/a/a07503cbf851c7efa50cc9fee82f205c.bin
+#	new file:   Library/ShaderCache/a/a0cabb44824d023c25f702d6a99bf268.bin
+#	new file:   Library/ShaderCache/a/a402799079eb81ab61a64d43e635bf8d.bin
+#	new file:   Library/ShaderCache/a/a4548b60d0bb597d429c7d69c32b2bd8.bin
+#	new file:   Library/ShaderCache/a/a4aac6eb1b4c69195e7f8edd0a22cabd.bin
+#	new file:   Library/ShaderCache/a/a4dc12a8921eeca9b998fd760db35b4b.bin
+#	new file:   Library/ShaderCache/a/a4f83c55d5b9daff99d63ddfd51d523a.bin
+#	new file:   Library/ShaderCache/a/a5948420f8993c6a01bad1cd6fa022a0.bin
+#	new file:   Library/ShaderCache/a/a5bb14f77cc262a46c322f2ea27d4d43.bin
+#	new file:   Library/ShaderCache/a/a6cf53886834fd6439de5d1fc1d0e773.bin
+#	new file:   Library/ShaderCache/a/a75c5b83e6f5b7acef567f1707b7cc29.bin
+#	new file:   Library/ShaderCache/a/a8dde01ee052dc9d674ec167a0702971.bin
+#	new file:   Library/ShaderCache/a/ab06a0c58d8f559c533a4a4b00d954a5.bin
+#	new file:   Library/ShaderCache/a/ab0a3c83c508d13fccf0e89055225f42.bin
+#	new file:   Library/ShaderCache/a/ab45ecf94cda1c1ec55ecba177af5a8f.bin
+#	new file:   Library/ShaderCache/a/ab52aed07ac79182bdebcc56136acf19.bin
+#	new file:   Library/ShaderCache/a/abe499d6315759bfeb5d1abb8809ec3b.bin
+#	new file:   Library/ShaderCache/a/abe70a8eb784a08525779261ba51fdef.bin
+#	new file:   Library/ShaderCache/a/ac6b2841e7c966abe0ff040ad49ce02d.bin
+#	new file:   Library/ShaderCache/a/ac6fe76b2083f471d4aec8e8b1966e1c.bin
+#	new file:   Library/ShaderCache/a/adc078baeb2b449e22e21fc464e66510.bin
+#	new file:   Library/ShaderCache/a/aded8efe041c2720dcde9d3028178669.bin
+#	new file:   Library/ShaderCache/a/ae26768f6136c86fb0d8f47fec20192d.bin
+#	new file:   Library/ShaderCache/a/aea0e6809ac914f4b2492015fd189d42.bin
+#	new file:   Library/ShaderCache/a/afa881e9393cbc5e7600b06a4a5c6a14.bin
+#	new file:   Library/ShaderCache/b/b16705b953d60684790f40b2da7f6f5b.bin
+#	new file:   Library/ShaderCache/b/b2ac201b2735ea2d3541596007d3bb8b.bin
+#	new file:   Library/ShaderCache/b/b30079196c13d2217342d8e2a038235f.bin
+#	new file:   Library/ShaderCache/b/b392b000aaeb98484a458838e05e2cd8.bin
+#	new file:   Library/ShaderCache/b/b45144e90dde3ec0fcbf6974c1243b21.bin
+#	new file:   Library/ShaderCache/b/b5f49dcebe9734b2243c8eebcf35aa7d.bin
+#	new file:   Library/ShaderCache/b/b63987d027c9d7e7183102d942e53c29.bin
+#	new file:   Library/ShaderCache/b/bb8607f9c5eb4a34b601b5df342ebbdc.bin
+#	new file:   Library/ShaderCache/b/bc40d2c2662c7707549be3382f536ed0.bin
+#	new file:   Library/ShaderCache/b/bd6da3e642204c71420f2496c22dc2bb.bin
+#	new file:   Library/ShaderCache/b/be9f808e8b210da4e6501816fd8011ff.bin
+#	new file:   Library/ShaderCache/b/bf25f2525a8ea10cef331d10997f8e7e.bin
+#	new file:   Library/ShaderCache/b/bf835beabec9f413ce4f0901bbb36c73.bin
+#	new file:   Library/ShaderCache/c/c02d268acd045c7724834a284144658e.bin
+#	new file:   Library/ShaderCache/c/c05e9f69cd0bb83cce79303dd8fd9b37.bin
+#	new file:   Library/ShaderCache/c/c1eb5b1b76613af9e420115b5c401abb.bin
+#	new file:   Library/ShaderCache/c/c22bbc8b2f0f4aa5eac1795e9d0572c7.bin
+#	new file:   Library/ShaderCache/c/c2a603a6a9b76dd324b4f65b57232b56.bin
+#	new file:   Library/ShaderCache/c/c35c90360d66e80776efaee7b1aa8422.bin
+#	new file:   Library/ShaderCache/c/c52f98b185f5ce382c82f05ca33f3b54.bin
+#	new file:   Library/ShaderCache/c/c55b5a69bd9483dc7bd278c5f7978d6c.bin
+#	new file:   Library/ShaderCache/c/c6cd738a1d7cf760b81e5232e5e094a6.bin
+#	new file:   Library/ShaderCache/c/c8bcaddf3da5105753ff8e4e36c6838e.bin
+#	new file:   Library/ShaderCache/c/c8e07121e6f908f2a998f5140e8b34a9.bin
+#	new file:   Library/ShaderCache/c/cd940d73a2a4533d9d32ec69903a844b.bin
+#	new file:   Library/ShaderCache/c/ce0c384fd93982ccdc5e952969f6d148.bin
+#	new file:   Library/ShaderCache/c/cf06622c5b0dae29af526edd89393b16.bin
+#	new file:   Library/ShaderCache/d/d0d726784a2ba25a16ec6572d70141c7.bin
+#	new file:   Library/ShaderCache/d/d16e7fa227f0b5f9dfebdaf9c7e0a5a9.bin
+#	new file:   Library/ShaderCache/d/d26b774bc34985f682a37c1e7baff8c7.bin
+#	new file:   Library/ShaderCache/d/d3d874136c649ae25f2adddccd315c05.bin
+#	new file:   Library/ShaderCache/d/d648599247247d556d5e8faf858302b6.bin
+#	new file:   Library/ShaderCache/d/d71ffed744dabadec226c1603eed5c19.bin
+#	new file:   Library/ShaderCache/d/d78a2247c32ba0c8471fece9b4054536.bin
+#	new file:   Library/ShaderCache/d/d7c2af665926446c6de38b7293400024.bin
+#	new file:   Library/ShaderCache/d/d8eb8c5262cfbba83810d4fc3c138bc9.bin
+#	new file:   Library/ShaderCache/d/d9a39a283c0ca8e4a71e4f20065153c0.bin
+#	new file:   Library/ShaderCache/d/dc3bd1edafd0ffec3f58b97b3519b3b5.bin
+#	new file:   Library/ShaderCache/d/ddfd244e8d30b70911ffebdd0a55e996.bin
+#	new file:   Library/ShaderCache/d/df56177b813f6a7fd8bba61f06e969d9.bin
+#	new file:   Library/ShaderCache/e/e00ada7e8cdc539e2b1f9b38ec3c1988.bin
+#	new file:   Library/ShaderCache/e/e342841d13037f81f8ce8570204f357b.bin
+#	new file:   Library/ShaderCache/e/e3c1d42952d36848c9eb0344f53c4004.bin
+#	new file:   Library/ShaderCache/e/e639fe56590d277ad4d6a0f02ea28e3c.bin
+#	new file:   Library/ShaderCache/e/e70174e23fbf50bb5ce7e53d264841cd.bin
+#	new file:   Library/ShaderCache/e/e719689f5fd80a4b6365994a9575a39a.bin
+#	new file:   Library/ShaderCache/e/e7d3a88166df898efcf2c3bd8d20559f.bin
+#	new file:   Library/ShaderCache/e/e81df5d639639fa995e47282620b7ae9.bin
+#	new file:   Library/ShaderCache/e/e9f61c77ffba433f941e5aa7fdf1998c.bin
+#	new file:   Library/ShaderCache/e/eae60a2a6be5c6767b26512376a22d55.bin
+#	new file:   Library/ShaderCache/e/ec296f51e37a5380a42dec445a8180bc.bin
+#	new file:   Library/ShaderCache/e/edc0d2203528ab0a8a8a16000b3e0e4a.bin
+#	new file:   Library/ShaderCache/e/efe431c10a713bc676e4fa21d1355e26.bin
+#	new file:   Library/ShaderCache/f/f0d088e6f159bd6cd639b4c6d4946408.bin
+#	new file:   Library/ShaderCache/f/f40e5a5397cf6e781027b66ee51dd4be.bin
+#	new file:   Library/ShaderCache/f/f4e6b26ba3b82e6dae8eac880486f21a.bin
+#	new file:   Library/ShaderCache/f/f58760f112c968010c136769b1ccd31b.bin
+#	new file:   Library/ShaderCache/f/f5a44cc32b0e7b0e443a31c03893222f.bin
+#	new file:   Library/ShaderCache/f/f5d4a045850664422d2c7c938f46a409.bin
+#	new file:   Library/ShaderCache/f/f63e465dacf9841b42256b41fd04d339.bin
+#	new file:   Library/ShaderCache/f/f65da89dd95fe22e797ba9bd36ae45bc.bin
+#	new file:   Library/ShaderCache/f/f6634b70a0ae77ea50a0e6c2aee8609f.bin
+#	new file:   Library/ShaderCache/f/f988f30593aab23dff3c1aa10caacc42.bin
+#	new file:   Library/ShaderCache/f/f98ee7024936613bc480379771ce4f26.bin
+#	new file:   Library/ShaderCache/f/fa699396198a0d6c6dd2d480703ba9d0.bin
+#	new file:   Library/ShaderCache/f/fbf8f3b19b91d28c9f1e9179b12fd8d1.bin
+#	new file:   Library/ShaderCache/f/fd12c5efdeb4b3cfd6a1d18d52534a32.bin
+#	new file:   Library/ShaderCache/f/fd96eaf051424d60bdf46ad5db676497.bin
+#	new file:   Library/ShaderCache/f/fde6afa7f23553c384a3bcd9ae903ae2.bin
+#	new file:   Library/ShaderCache/f/fe07793a408cee30b07d7e8eead6f0fc.bin
+#	new file:   Library/ShaderCache/f/fe7895124628ed18385945663443ec37.bin
+#	new file:   Library/ShaderCache/f/ffe46b6761d1edd0354b74cd7fd6aa2b.bin
+#	new file:   Library/UnityAssemblies/UnityEditor.dll
+#	new file:   Library/UnityAssemblies/UnityEditor.xml
+#	new file:   Library/UnityAssemblies/UnityEngine.Networking.dll
+#	new file:   Library/UnityAssemblies/UnityEngine.Networking.xml
+#	new file:   Library/UnityAssemblies/UnityEngine.UI.dll
+#	new file:   Library/UnityAssemblies/UnityEngine.UI.xml
+#	new file:   Library/UnityAssemblies/UnityEngine.dll
+#	new file:   Library/UnityAssemblies/UnityEngine.xml
+#	new file:   Library/UnityAssemblies/version.txt
+#	new file:   Library/assetDatabase3
+#	new file:   Library/expandedItems
+#	new file:   Library/metadata/00/00000000000000001000000000000000
+#	new file:   Library/metadata/00/00000000000000001000000000000000.info
+#	new file:   Library/metadata/00/00000000000000002000000000000000
+#	new file:   Library/metadata/00/00000000000000002000000000000000.info
+#	new file:   Library/metadata/00/00000000000000003000000000000000
+#	new file:   Library/metadata/00/00000000000000003000000000000000.info
+#	new file:   Library/metadata/00/00000000000000004000000000000000
+#	new file:   Library/metadata/00/00000000000000004000000000000000.info
+#	new file:   Library/metadata/00/00000000000000004100000000000000
+#	new file:   Library/metadata/00/00000000000000004100000000000000.info
+#	new file:   Library/metadata/00/00000000000000005000000000000000
+#	new file:   Library/metadata/00/00000000000000005000000000000000.info
+#	new file:   Library/metadata/00/00000000000000005100000000000000
+#	new file:   Library/metadata/00/00000000000000005100000000000000.info
+#	new file:   Library/metadata/00/00000000000000006000000000000000
+#	new file:   Library/metadata/00/00000000000000006000000000000000.info
+#	new file:   Library/metadata/00/00000000000000006100000000000000
+#	new file:   Library/metadata/00/00000000000000006100000000000000.info
+#	new file:   Library/metadata/00/00000000000000007000000000000000
+#	new file:   Library/metadata/00/00000000000000007000000000000000.info
+#	new file:   Library/metadata/00/00000000000000007100000000000000
+#	new file:   Library/metadata/00/00000000000000007100000000000000.info
+#	new file:   Library/metadata/00/00000000000000008000000000000000
+#	new file:   Library/metadata/00/00000000000000008000000000000000.info
+#	new file:   Library/metadata/00/00000000000000008100000000000000
+#	new file:   Library/metadata/00/00000000000000008100000000000000.info
+#	new file:   Library/metadata/00/00000000000000009000000000000000
+#	new file:   Library/metadata/00/00000000000000009000000000000000.info
+#	new file:   Library/metadata/00/0000000000000000a000000000000000
+#	new file:   Library/metadata/00/0000000000000000a000000000000000.info
+#	new file:   Library/metadata/00/0000000000000000a100000000000000
+#	new file:   Library/metadata/00/0000000000000000a100000000000000.info
+#	new file:   Library/metadata/00/0000000000000000b000000000000000
+#	new file:   Library/metadata/00/0000000000000000b000000000000000.info
+#	new file:   Library/metadata/00/0000000000000000c000000000000000
+#	new file:   Library/metadata/00/0000000000000000c000000000000000.info
+#	new file:   Library/metadata/00/00ab50663956ee141b5217ce57745c8c
+#	new file:   Library/metadata/00/00ab50663956ee141b5217ce57745c8c.info
+#	new file:   Library/metadata/01/01d87164f5c4f423faf6786f6b05c544
+#	new file:   Library/metadata/01/01d87164f5c4f423faf6786f6b05c544.info
+#	new file:   Library/metadata/06/064bbf68082c041daadf0ab470c48c27
+#	new file:   Library/metadata/06/064bbf68082c041daadf0ab470c48c27.info
+#	new file:   Library/metadata/06/06b515c54372d49609d3d64646bf5dcf
+#	new file:   Library/metadata/06/06b515c54372d49609d3d64646bf5dcf.info
+#	new file:   Library/metadata/06/06e77baea2a8f4a1291a0b1e0caea217
+#	new file:   Library/metadata/06/06e77baea2a8f4a1291a0b1e0caea217.info
+#	new file:   Library/metadata/07/070aae7208ed94562912d482d6d0de70
+#	new file:   Library/metadata/07/070aae7208ed94562912d482d6d0de70.info
+#	new file:   Library/metadata/07/07d7f0e5d6960439391c802ebbc76b6e
+#	new file:   Library/metadata/07/07d7f0e5d6960439391c802ebbc76b6e.info
+#	new file:   Library/metadata/09/09c2c9264041b4416bde085b554adb4f
+#	new file:   Library/metadata/09/09c2c9264041b4416bde085b554adb4f.info
+#	new file:   Library/metadata/09/09ca524f3e2bade4cb9fb1715f98eed3
+#	new file:   Library/metadata/09/09ca524f3e2bade4cb9fb1715f98eed3.info
+#	new file:   Library/metadata/09/09fe616ec8ec0438cac0fc0350b6a735
+#	new file:   Library/metadata/09/09fe616ec8ec0438cac0fc0350b6a735.info
+#	new file:   Library/metadata/0a/0a29f9f0b25324630839e830ad5920ec
+#	new file:   Library/metadata/0a/0a29f9f0b25324630839e830ad5920ec.info
+#	new file:   Library/metadata/0a/0af473f076e86462e84121bfbc95b7c3
+#	new file:   Library/metadata/0a/0af473f076e86462e84121bfbc95b7c3.info
+#	new file:   Library/metadata/0a/0afae866cc08a4d5796dec549ee0e5f1
+#	new file:   Library/metadata/0a/0afae866cc08a4d5796dec549ee0e5f1.info
+#	new file:   Library/metadata/0c/0cc41a863b7a944d0a4aa9f85e0fd7df
+#	new file:   Library/metadata/0c/0cc41a863b7a944d0a4aa9f85e0fd7df.info
+#	new file:   Library/metadata/0c/0cd0c5cea9b5b4e17ba3f2595af38182
+#	new file:   Library/metadata/0c/0cd0c5cea9b5b4e17ba3f2595af38182.info
+#	new file:   Library/metadata/0d/0d82ca709392242359232628784fddee
+#	new file:   Library/metadata/0d/0d82ca709392242359232628784fddee.info
+#	new file:   Library/metadata/0e/0e53acf83fb28404aaa966f263124e99
+#	new file:   Library/metadata/0e/0e53acf83fb28404aaa966f263124e99.info
+#	new file:   Library/metadata/0e/0eb1a426b77e74db7ba313290a520381
+#	new file:   Library/metadata/0e/0eb1a426b77e74db7ba313290a520381.info
+#	new file:   Library/metadata/11/118ae9503f3834d7cbe2390d923756fd
+#	new file:   Library/metadata/11/118ae9503f3834d7cbe2390d923756fd.info
+#	new file:   Library/metadata/13/130ec38c96e90489bb17af8a019e9fd9
+#	new file:   Library/metadata/13/130ec38c96e90489bb17af8a019e9fd9.info
+#	new file:   Library/metadata/14/14e840d414876412081ea4357cb8fbfd
+#	new file:   Library/metadata/14/14e840d414876412081ea4357cb8fbfd.info
+#	new file:   Library/metadata/15/155624b8388604096a6ef2d2ae5fd360
+#	new file:   Library/metadata/15/155624b8388604096a6ef2d2ae5fd360.info
+#	new file:   Library/metadata/15/157c6ef206e814549a553b7be7b5ddcc
+#	new file:   Library/metadata/15/157c6ef206e814549a553b7be7b5ddcc.info
+#	new file:   Library/metadata/1a/1a4ccb29dc242ba488d8578e7071bfd9
+#	new file:   Library/metadata/1a/1a4ccb29dc242ba488d8578e7071bfd9.info
+#	new file:   Library/metadata/1a/1aace96e67513b14099574590e0052ff
+#	new file:   Library/metadata/1a/1aace96e67513b14099574590e0052ff.info
+#	new file:   Library/metadata/1e/1e1c5e477fc6f4d0b993c8969c422373
+#	new file:   Library/metadata/1e/1e1c5e477fc6f4d0b993c8969c422373.info
+#	new file:   Library/metadata/1f/1f9740665a00f4c11aac6f8ec2f3901a
+#	new file:   Library/metadata/1f/1f9740665a00f4c11aac6f8ec2f3901a.info
+#	new file:   Library/metadata/20/20c57f72278a84743982d0c442bdbc6f
+#	new file:   Library/metadata/20/20c57f72278a84743982d0c442bdbc6f.info
+#	new file:   Library/metadata/21/212bf32cf53b44bcc9797b955c691d95
+#	new file:   Library/metadata/21/212bf32cf53b44bcc9797b955c691d95.info
+#	new file:   Library/metadata/21/217ed4780f9c241b49b1b27c872db46d
+#	new file:   Library/metadata/21/217ed4780f9c241b49b1b27c872db46d.info
+#	new file:   Library/metadata/23/232f697d510534f779b51d1e00a739c3
+#	new file:   Library/metadata/23/232f697d510534f779b51d1e00a739c3.info
+#	new file:   Library/metadata/23/23c4f503f6ae64e149cf508e4406c016
+#	new file:   Library/metadata/23/23c4f503f6ae64e149cf508e4406c016.info
+#	new file:   Library/metadata/25/2558618b62f154bf28fcd09a4f4d77dc
+#	new file:   Library/metadata/25/2558618b62f154bf28fcd09a4f4d77dc.info
+#	new file:   Library/metadata/26/26a2fd33db82649c3981325f5915de7a
+#	new file:   Library/metadata/26/26a2fd33db82649c3981325f5915de7a.info
+#	new file:   Library/metadata/27/2774fea035d0d463f95095eaa8a90854
+#	new file:   Library/metadata/27/2774fea035d0d463f95095eaa8a90854.info
+#	new file:   Library/metadata/27/27bcc00dbc4b74d2f97cac0ca1f56c2b
+#	new file:   Library/metadata/27/27bcc00dbc4b74d2f97cac0ca1f56c2b.info
+#	new file:   Library/metadata/27/27eb2ea74c7e743cb93e00dcafdc4272
+#	new file:   Library/metadata/27/27eb2ea74c7e743cb93e00dcafdc4272.info
+#	new file:   Library/metadata/27/27fc1085f7ada41a7a7141ca118e2d70
+#	new file:   Library/metadata/27/27fc1085f7ada41a7a7141ca118e2d70.info
+#	new file:   Library/metadata/28/286a82ee149a4471289a826ecd8bd098
+#	new file:   Library/metadata/28/286a82ee149a4471289a826ecd8bd098.info
+#	new file:   Library/metadata/29/29ad9d9c9a0e4451fb78497952df232a
+#	new file:   Library/metadata/29/29ad9d9c9a0e4451fb78497952df232a.info
+#	new file:   Library/metadata/2a/2aaf3afb84424204fbac2bb66a3e2321
+#	new file:   Library/metadata/2a/2aaf3afb84424204fbac2bb66a3e2321.info
+#	new file:   Library/metadata/2b/2b7d8decac7bd4413a5d66729fab03ad
+#	new file:   Library/metadata/2b/2b7d8decac7bd4413a5d66729fab03ad.info
+#	new file:   Library/metadata/2b/2bde3130812a64e1d98ed6360403461b
+#	new file:   Library/metadata/2b/2bde3130812a64e1d98ed6360403461b.info
+#	new file:   Library/metadata/2c/2ce353eb3202343d3885be633ccf5221
+#	new file:   Library/metadata/2c/2ce353eb3202343d3885be633ccf5221.info
+#	new file:   Library/metadata/30/30bf6a77b1c0447f48aa542bc1e699d1
+#	new file:   Library/metadata/30/30bf6a77b1c0447f48aa542bc1e699d1.info
+#	new file:   Library/metadata/30/30e355bd9a34b4bea91e5161af90188f
+#	new file:   Library/metadata/30/30e355bd9a34b4bea91e5161af90188f.info
+#	new file:   Library/metadata/31/311c6460557374f8c92e86f47ee8b572
+#	new file:   Library/metadata/31/311c6460557374f8c92e86f47ee8b572.info
+#	new file:   Library/metadata/31/31da41630fbcd43b2bb0916a30c86951
+#	new file:   Library/metadata/31/31da41630fbcd43b2bb0916a30c86951.info
+#	new file:   Library/metadata/32/3201db1dc66b34c4fa78016ca065a04c
+#	new file:   Library/metadata/32/3201db1dc66b34c4fa78016ca065a04c.info
+#	new file:   Library/metadata/32/32bfabf037e074c4cbcbc83e5928086f
+#	new file:   Library/metadata/32/32bfabf037e074c4cbcbc83e5928086f.info
+#	new file:   Library/metadata/33/33c59b93484cb46a888ffc6ac9cf83e7
+#	new file:   Library/metadata/33/33c59b93484cb46a888ffc6ac9cf83e7.info
+#	new file:   Library/metadata/35/354f6a6bf57d640978f4a9bdfe50f9ae
+#	new file:   Library/metadata/35/354f6a6bf57d640978f4a9bdfe50f9ae.info
+#	new file:   Library/metadata/36/367e0c18b2d22e34493a15017f10caff
+#	new file:   Library/metadata/36/367e0c18b2d22e34493a15017f10caff.info
+#	new file:   Library/metadata/37/3723967dcfba44f2d95732b58b7bf62b
+#	new file:   Library/metadata/37/3723967dcfba44f2d95732b58b7bf62b.info
+#	new file:   Library/metadata/39/3991872cf98b047189a7c13b2fa625e1
+#	new file:   Library/metadata/39/3991872cf98b047189a7c13b2fa625e1.info
+#	new file:   Library/metadata/3a/3a9e8ade2c65f7147889415272954186
+#	new file:   Library/metadata/3a/3a9e8ade2c65f7147889415272954186.info
+#	new file:   Library/metadata/3a/3adba8608be6b4a12834dc619463c45a
+#	new file:   Library/metadata/3a/3adba8608be6b4a12834dc619463c45a.info
+#	new file:   Library/metadata/3c/3c0ad459c1534645b5d603b7cc258f97
+#	new file:   Library/metadata/3c/3c0ad459c1534645b5d603b7cc258f97.info
+#	new file:   Library/metadata/3d/3d84abf9f54a4469cbf7e896af018fb3
+#	new file:   Library/metadata/3d/3d84abf9f54a4469cbf7e896af018fb3.info
+#	new file:   Library/metadata/3e/3ed9d74e97d47468e810a196d484b54d
+#	new file:   Library/metadata/3e/3ed9d74e97d47468e810a196d484b54d.info
+#	new file:   Library/metadata/3f/3f510c58a5c47433f939a7c095d59a2c
+#	new file:   Library/metadata/3f/3f510c58a5c47433f939a7c095d59a2c.info
+#	new file:   Library/metadata/3f/3fe1181a964f84a389a5a21dd9d817ea
+#	new file:   Library/metadata/3f/3fe1181a964f84a389a5a21dd9d817ea.info
+#	new file:   Library/metadata/3f/3feabe8a6ab0643b99f3589e483c30e4
+#	new file:   Library/metadata/3f/3feabe8a6ab0643b99f3589e483c30e4.info
+#	new file:   Library/metadata/41/41712cc02488f4ce58f579c3155d1a93
+#	new file:   Library/metadata/41/41712cc02488f4ce58f579c3155d1a93.info
+#	new file:   Library/metadata/42/42bc5c532bd8240ce9d679240d0cd07a
+#	new file:   Library/metadata/42/42bc5c532bd8240ce9d679240d0cd07a.info
+#	new file:   Library/metadata/43/43a6ecc1069ac44ffa67b043b902f840
+#	new file:   Library/metadata/43/43a6ecc1069ac44ffa67b043b902f840.info
+#	new file:   Library/metadata/43/43f0c72d515e7404d9223687bfca7ed0
+#	new file:   Library/metadata/43/43f0c72d515e7404d9223687bfca7ed0.info
+#	new file:   Library/metadata/45/4562645889912438780913c4d3f2ed9e
+#	new file:   Library/metadata/45/4562645889912438780913c4d3f2ed9e.info
+#	new file:   Library/metadata/47/471a35b69454d4c41a9cc405de13e7f6
+#	new file:   Library/metadata/47/471a35b69454d4c41a9cc405de13e7f6.info
+#	new file:   Library/metadata/49/493d533f878d247369f2d301d071ada6
+#	new file:   Library/metadata/49/493d533f878d247369f2d301d071ada6.info
+#	new file:   Library/metadata/4b/4b8019299e1024a2f9d4d4cdf3022d22
+#	new file:   Library/metadata/4b/4b8019299e1024a2f9d4d4cdf3022d22.info
+#	new file:   Library/metadata/4d/4d29420b05c23411ead6e41a83ccde91
+#	new file:   Library/metadata/4d/4d29420b05c23411ead6e41a83ccde91.info
+#	new file:   Library/metadata/4e/4eb1a251916b5694ab4a701987ba2308
+#	new file:   Library/metadata/4e/4eb1a251916b5694ab4a701987ba2308.info
+#	new file:   Library/metadata/51/5181873a7fbcc46de9495a2319059b89
+#	new file:   Library/metadata/51/5181873a7fbcc46de9495a2319059b89.info
+#	new file:   Library/metadata/55/55c4d2534d5794d38a352cc2f7f64bc9
+#	new file:   Library/metadata/55/55c4d2534d5794d38a352cc2f7f64bc9.info
+#	new file:   Library/metadata/56/569d6e59603834592b4cec7f21d1210a
+#	new file:   Library/metadata/56/569d6e59603834592b4cec7f21d1210a.info
+#	new file:   Library/metadata/56/56f0360b667694e879de2fea2116417c
+#	new file:   Library/metadata/56/56f0360b667694e879de2fea2116417c.info
+#	new file:   Library/metadata/58/58334c7ddc1fb4bf5aa13ef6d45309a8
+#	new file:   Library/metadata/58/58334c7ddc1fb4bf5aa13ef6d45309a8.info
+#	new file:   Library/metadata/5a/5a70d9425b88d47aba5d1dbc06301650
+#	new file:   Library/metadata/5a/5a70d9425b88d47aba5d1dbc06301650.info
+#	new file:   Library/metadata/5b/5bf3e473bee4c4b609432bbe474d40cc
+#	new file:   Library/metadata/5b/5bf3e473bee4c4b609432bbe474d40cc.info
+#	new file:   Library/metadata/5c/5cf48619eebb2e44380a970e304bef07
+#	new file:   Library/metadata/5c/5cf48619eebb2e44380a970e304bef07.info
+#	new file:   Library/metadata/5d/5d68c1b78c87f4e858c208af0a0c4844
+#	new file:   Library/metadata/5d/5d68c1b78c87f4e858c208af0a0c4844.info
+#	new file:   Library/metadata/5e/5e2ee3230c50a416086861c394affddc
+#	new file:   Library/metadata/5e/5e2ee3230c50a416086861c394affddc.info
+#	new file:   Library/metadata/5e/5e4cd6b254fad4494894025af6b251d3
+#	new file:   Library/metadata/5e/5e4cd6b254fad4494894025af6b251d3.info
+#	new file:   Library/metadata/5f/5f32cd94baa94578a686d4b9d6b660f7
+#	new file:   Library/metadata/5f/5f32cd94baa94578a686d4b9d6b660f7.info
+#	new file:   Library/metadata/60/60e747cf2bfdf4cf6a9c1becf53fa8ec
+#	new file:   Library/metadata/60/60e747cf2bfdf4cf6a9c1becf53fa8ec.info
+#	new file:   Library/metadata/62/623449c0c42ba4684a7759687aa6f8e4
+#	new file:   Library/metadata/62/623449c0c42ba4684a7759687aa6f8e4.info
+#	new file:   Library/metadata/62/627a41a0b08294bf68514762e90b8923
+#	new file:   Library/metadata/62/627a41a0b08294bf68514762e90b8923.info
+#	new file:   Library/metadata/63/631965d6998b94325babc62f27e3584a
+#	new file:   Library/metadata/63/631965d6998b94325babc62f27e3584a.info
+#	new file:   Library/metadata/63/634a3f376cc89426aab7a158e6457771
+#	new file:   Library/metadata/63/634a3f376cc89426aab7a158e6457771.info
+#	new file:   Library/metadata/68/68e2a46b887754679bf42ed387654c56
+#	new file:   Library/metadata/68/68e2a46b887754679bf42ed387654c56.info
+#	new file:   Library/metadata/69/69f9a3b71e61842a092f8c768c4e0576
+#	new file:   Library/metadata/69/69f9a3b71e61842a092f8c768c4e0576.info
+#	new file:   Library/metadata/6a/6a5a5f6b83fa74e0fa98376222b11d7c
+#	new file:   Library/metadata/6a/6a5a5f6b83fa74e0fa98376222b11d7c.info
+#	new file:   Library/metadata/6c/6c2812ab4b4e54fcba86c6479eba0a4b
+#	new file:   Library/metadata/6c/6c2812ab4b4e54fcba86c6479eba0a4b.info
+#	new file:   Library/metadata/6c/6cdf9ee0a8d2b4d938398245435a3a9a
+#	new file:   Library/metadata/6c/6cdf9ee0a8d2b4d938398245435a3a9a.info
+#	new file:   Library/metadata/6c/6ceacb032cba6d24783031e7a50e8c33
+#	new file:   Library/metadata/6c/6ceacb032cba6d24783031e7a50e8c33.info
+#	new file:   Library/metadata/6d/6d02846e9e269448d8938c981a9d79cb
+#	new file:   Library/metadata/6d/6d02846e9e269448d8938c981a9d79cb.info
+#	new file:   Library/metadata/6d/6d1ed3152b2b64f8a94a72538e96e897
+#	new file:   Library/metadata/6d/6d1ed3152b2b64f8a94a72538e96e897.info
+#	new file:   Library/metadata/6d/6d5069f3d20c34ad4a75d504aa6bb394
+#	new file:   Library/metadata/6d/6d5069f3d20c34ad4a75d504aa6bb394.info
+#	new file:   Library/metadata/6d/6df09b1574d8c4f4da0670036360689e
+#	new file:   Library/metadata/6d/6df09b1574d8c4f4da0670036360689e.info
+#	new file:   Library/metadata/6e/6eb638b9783ce46339de8d1004ba9515
+#	new file:   Library/metadata/6e/6eb638b9783ce46339de8d1004ba9515.info
+#	new file:   Library/metadata/70/70384b2219a3f472188b01d6bac8ff7a
+#	new file:   Library/metadata/70/70384b2219a3f472188b01d6bac8ff7a.info
+#	new file:   Library/metadata/73/739bbd9f364b4268874f9fd86ab3beef
+#	new file:   Library/metadata/73/739bbd9f364b4268874f9fd86ab3beef.info
+#	new file:   Library/metadata/73/739dae80059c449b6abb04530353c2e4
+#	new file:   Library/metadata/73/739dae80059c449b6abb04530353c2e4.info
+#	new file:   Library/metadata/74/740839cdd699641f394afc9453279b5c
+#	new file:   Library/metadata/74/740839cdd699641f394afc9453279b5c.info
+#	new file:   Library/metadata/75/75a7ba279eb7f4dfab0113c47e2af35a
+#	new file:   Library/metadata/75/75a7ba279eb7f4dfab0113c47e2af35a.info
+#	new file:   Library/metadata/76/764048a5a79c6443c90a1a0a9de408e0
+#	new file:   Library/metadata/76/764048a5a79c6443c90a1a0a9de408e0.info
+#	new file:   Library/metadata/77/776dc5c4eee1f4037b3d4ee1aa71c0b6
+#	new file:   Library/metadata/77/776dc5c4eee1f4037b3d4ee1aa71c0b6.info
+#	new file:   Library/metadata/77/77fec38f6176846da9faa6e29a10b2d5
+#	new file:   Library/metadata/77/77fec38f6176846da9faa6e29a10b2d5.info
+#	new file:   Library/metadata/78/78ad31d3f41574b8b946e1a507690fa3
+#	new file:   Library/metadata/78/78ad31d3f41574b8b946e1a507690fa3.info
+#	new file:   Library/metadata/7c/7c473e2b202664a5bbaa8d89825c5227
+#	new file:   Library/metadata/7c/7c473e2b202664a5bbaa8d89825c5227.info
+#	new file:   Library/metadata/7c/7cbab2be89b54486bbd23a6fe637d30e
+#	new file:   Library/metadata/7c/7cbab2be89b54486bbd23a6fe637d30e.info
+#	new file:   Library/metadata/7e/7e970779f7db2413fb725e1c2b19a5e1
+#	new file:   Library/metadata/7e/7e970779f7db2413fb725e1c2b19a5e1.info
+#	new file:   Library/metadata/7f/7f961be1f8939456caba2ef0f281eb60
+#	new file:   Library/metadata/7f/7f961be1f8939456caba2ef0f281eb60.info
+#	new file:   Library/metadata/7f/7fb376d343bc24153a94ca184c81bed0
+#	new file:   Library/metadata/7f/7fb376d343bc24153a94ca184c81bed0.info
+#	new file:   Library/metadata/80/80a3616ca19596e4da0f10f14d241e9f
+#	new file:   Library/metadata/80/80a3616ca19596e4da0f10f14d241e9f.info
+#	new file:   Library/metadata/81/81255aac174c1421490cc8ea3c27e030
+#	new file:   Library/metadata/81/81255aac174c1421490cc8ea3c27e030.info
+#	new file:   Library/metadata/81/81cf8921b342c41ca8392fa490a95122
+#	new file:   Library/metadata/81/81cf8921b342c41ca8392fa490a95122.info
+#	new file:   Library/metadata/82/82cd9d41ed233534f82b12e8585d2518
+#	new file:   Library/metadata/82/82cd9d41ed233534f82b12e8585d2518.info
+#	new file:   Library/metadata/83/8397c35dcc4bf4d608600e8f56d960ee
+#	new file:   Library/metadata/83/8397c35dcc4bf4d608600e8f56d960ee.info
+#	new file:   Library/metadata/85/852e56802eb941638acbb491814497b0
+#	new file:   Library/metadata/85/852e56802eb941638acbb491814497b0.info
+#	new file:   Library/metadata/87/870353891bb340e2b2a9c8707e7419ba
+#	new file:   Library/metadata/87/870353891bb340e2b2a9c8707e7419ba.info
+#	new file:   Library/metadata/87/872bb707657784a1db790c5954808473
+#	new file:   Library/metadata/87/872bb707657784a1db790c5954808473.info
+#	new file:   Library/metadata/87/873e596f0f64443f9828963c9bae6ba4
+#	new file:   Library/metadata/87/873e596f0f64443f9828963c9bae6ba4.info
+#	new file:   Library/metadata/87/878d3772eaa6b4cd98b0fd9dca0fd842
+#	new file:   Library/metadata/87/878d3772eaa6b4cd98b0fd9dca0fd842.info
+#	new file:   Library/metadata/89/895ea81af010f4b42a331e434d99afba
+#	new file:   Library/metadata/89/895ea81af010f4b42a331e434d99afba.info
+#	new file:   Library/metadata/89/8968bf93fee1045dbab84d1ddf5e3a51
+#	new file:   Library/metadata/89/8968bf93fee1045dbab84d1ddf5e3a51.info
+#	new file:   Library/metadata/8a/8adbdca6fabad4eda8b97c3e28f14d51
+#	new file:   Library/metadata/8a/8adbdca6fabad4eda8b97c3e28f14d51.info
+#	new file:   Library/metadata/8e/8e0cd8ed44d4412cbe0642067abc9e44
+#	new file:   Library/metadata/8e/8e0cd8ed44d4412cbe0642067abc9e44.info
+#	new file:   Library/metadata/8e/8ea6aab73640442ddbdc939637aba305
+#	new file:   Library/metadata/8e/8ea6aab73640442ddbdc939637aba305.info
+#	new file:   Library/metadata/8e/8ec024e25e2224d3fa1935fc02c7f583
+#	new file:   Library/metadata/8e/8ec024e25e2224d3fa1935fc02c7f583.info
+#	new file:   Library/metadata/8e/8ec4824dfa50749e3bae0d54fac60f5b
+#	new file:   Library/metadata/8e/8ec4824dfa50749e3bae0d54fac60f5b.info
+#	new file:   Library/metadata/8e/8ec4f97e3d6b64fcdbe714df894f3c94
+#	new file:   Library/metadata/8e/8ec4f97e3d6b64fcdbe714df894f3c94.info
+#	new file:   Library/metadata/93/935cc5b2d6a4f4e908ec7cc38fcbf938
+#	new file:   Library/metadata/93/935cc5b2d6a4f4e908ec7cc38fcbf938.info
+#	new file:   Library/metadata/94/941aa168ea06b4e6f89adf28ac35eb6d
+#	new file:   Library/metadata/94/941aa168ea06b4e6f89adf28ac35eb6d.info
+#	new file:   Library/metadata/95/952943f1715b54ebb858888b1dabd0e3
+#	new file:   Library/metadata/95/952943f1715b54ebb858888b1dabd0e3.info
+#	new file:   Library/metadata/97/97decbdab0634cdd991f8d23ddf0dead
+#	new file:   Library/metadata/97/97decbdab0634cdd991f8d23ddf0dead.info
+#	new file:   Library/metadata/98/98d21a19353d63c41a1db64c21fcb3cd
+#	new file:   Library/metadata/98/98d21a19353d63c41a1db64c21fcb3cd.info
+#	new file:   Library/metadata/9c/9cb023eb1a498490ea8dd6b8b577a9bf
+#	new file:   Library/metadata/9c/9cb023eb1a498490ea8dd6b8b577a9bf.info
+#	new file:   Library/metadata/9c/9cc441890a50b4b75a1de66a901e97cc
+#	new file:   Library/metadata/9c/9cc441890a50b4b75a1de66a901e97cc.info
+#	new file:   Library/metadata/9d/9d4cccd681a074ee892de58e4862fe9c
+#	new file:   Library/metadata/9d/9d4cccd681a074ee892de58e4862fe9c.info
+#	new file:   Library/metadata/9e/9e46b142aceb2482d881911debed4157
+#	new file:   Library/metadata/9e/9e46b142aceb2482d881911debed4157.info
+#	new file:   Library/metadata/a0/a0c347251609245dd9925affd6c7f0b3
+#	new file:   Library/metadata/a0/a0c347251609245dd9925affd6c7f0b3.info
+#	new file:   Library/metadata/a1/a1eeabbb97eaf44c893df60495cab0f7
+#	new file:   Library/metadata/a1/a1eeabbb97eaf44c893df60495cab0f7.info
+#	new file:   Library/metadata/a3/a3965ef9e8dbb4ebfac6f59c02202b74
+#	new file:   Library/metadata/a3/a3965ef9e8dbb4ebfac6f59c02202b74.info
+#	new file:   Library/metadata/a5/a56158d448a1145b89f74ef72bb8140b
+#	new file:   Library/metadata/a5/a56158d448a1145b89f74ef72bb8140b.info
+#	new file:   Library/metadata/a6/a673db13c63b64a88b0b45805866422f
+#	new file:   Library/metadata/a6/a673db13c63b64a88b0b45805866422f.info
+#	new file:   Library/metadata/a7/a759a2c95bbb440369092d4b2ec2a7fd
+#	new file:   Library/metadata/a7/a759a2c95bbb440369092d4b2ec2a7fd.info
+#	new file:   Library/metadata/a9/a98b4f9f05d24473faf6bf8e674a0321
+#	new file:   Library/metadata/a9/a98b4f9f05d24473faf6bf8e674a0321.info
+#	new file:   Library/metadata/aa/aa0b70ec3bd1046ef8d5768e1e074d56
+#	new file:   Library/metadata/aa/aa0b70ec3bd1046ef8d5768e1e074d56.info
+#	new file:   Library/metadata/aa/aa10e5532039f43c4a53fa0d924a27f4
+#	new file:   Library/metadata/aa/aa10e5532039f43c4a53fa0d924a27f4.info
+#	new file:   Library/metadata/aa/aa8d94cd51c6b4dfc82f93ff389b4566
+#	new file:   Library/metadata/aa/aa8d94cd51c6b4dfc82f93ff389b4566.info
+#	new file:   Library/metadata/aa/aab6df435769f4fdeb754ed390cbfc14
+#	new file:   Library/metadata/aa/aab6df435769f4fdeb754ed390cbfc14.info
+#	new file:   Library/metadata/ab/ab45941d54f4e4f9fb98f9b0ddde4d48
+#	new file:   Library/metadata/ab/ab45941d54f4e4f9fb98f9b0ddde4d48.info
+#	new file:   Library/metadata/ab/ab46016492c1441b8a08949e4ff89954
+#	new file:   Library/metadata/ab/ab46016492c1441b8a08949e4ff89954.info
+#	new file:   Library/metadata/ac/ac02214a15553cd4697858a956408a03
+#	new file:   Library/metadata/ac/ac02214a15553cd4697858a956408a03.info
+#	new file:   Library/metadata/ac/ac6081afb1e024608ad15752b949281b
+#	new file:   Library/metadata/ac/ac6081afb1e024608ad15752b949281b.info
+#	new file:   Library/metadata/ac/ac72b6aebdf414a1ca4b445e1641f924
+#	new file:   Library/metadata/ac/ac72b6aebdf414a1ca4b445e1641f924.info
+#	new file:   Library/metadata/ad/ad575b8b661364c318dc5b203cb41b04
+#	new file:   Library/metadata/ad/ad575b8b661364c318dc5b203cb41b04.info
+#	new file:   Library/metadata/ad/adacbe462c66a42d59de6355769c593d
+#	new file:   Library/metadata/ad/adacbe462c66a42d59de6355769c593d.info
+#	new file:   Library/metadata/ad/adebbd281f1a4ef3a30be7f21937e02f
+#	new file:   Library/metadata/ad/adebbd281f1a4ef3a30be7f21937e02f.info
+#	new file:   Library/metadata/af/af7ab77f3db0749a8a8d72fc1499b861
+#	new file:   Library/metadata/af/af7ab77f3db0749a8a8d72fc1499b861.info
+#	new file:   Library/metadata/b0/b08019cdd09154966b61aecf1cd39a30
+#	new file:   Library/metadata/b0/b08019cdd09154966b61aecf1cd39a30.info
+#	new file:   Library/metadata/b3/b31e0399ba6f247de881a695ca96243b
+#	new file:   Library/metadata/b3/b31e0399ba6f247de881a695ca96243b.info
+#	new file:   Library/metadata/b3/b3d57bc972d394909a4f8435c526fe0a
+#	new file:   Library/metadata/b3/b3d57bc972d394909a4f8435c526fe0a.info
+#	new file:   Library/metadata/b4/b4237de4b5ae24f80a2dbd71c7b8eb1c
+#	new file:   Library/metadata/b4/b4237de4b5ae24f80a2dbd71c7b8eb1c.info
+#	new file:   Library/metadata/b5/b563c642b359743e8ac447f73562f94d
+#	new file:   Library/metadata/b5/b563c642b359743e8ac447f73562f94d.info
+#	new file:   Library/metadata/b6/b6a07aecf032e4f588eefacd4458fb33
+#	new file:   Library/metadata/b6/b6a07aecf032e4f588eefacd4458fb33.info
+#	new file:   Library/metadata/b8/b8835a74df070490fb5389558fdd0680
+#	new file:   Library/metadata/b8/b8835a74df070490fb5389558fdd0680.info
+#	new file:   Library/metadata/b8/b88f6fb45bafb1243a7b703e93d5e6d7
+#	new file:   Library/metadata/b8/b88f6fb45bafb1243a7b703e93d5e6d7.info
+#	new file:   Library/metadata/b9/b99a6fb3c0fdd4dcc95f76248b727f33
+#	new file:   Library/metadata/b9/b99a6fb3c0fdd4dcc95f76248b727f33.info
+#	new file:   Library/metadata/b9/b9aa079d4471242c38dbebb7a428ac9f
+#	new file:   Library/metadata/b9/b9aa079d4471242c38dbebb7a428ac9f.info
+#	new file:   Library/metadata/b9/b9f363d3a244e47e2ba259676e83dc1c
+#	new file:   Library/metadata/b9/b9f363d3a244e47e2ba259676e83dc1c.info
+#	new file:   Library/metadata/ba/ba66828564521430f94c9565d18373f2
+#	new file:   Library/metadata/ba/ba66828564521430f94c9565d18373f2.info
+#	new file:   Library/metadata/bb/bbde3291c4608469791da376107c4dc2
+#	new file:   Library/metadata/bb/bbde3291c4608469791da376107c4dc2.info
+#	new file:   Library/metadata/bc/bc199519ec7cc44399b7b0ae42ccd2a4
+#	new file:   Library/metadata/bc/bc199519ec7cc44399b7b0ae42ccd2a4.info
+#	new file:   Library/metadata/bc/bc77f283a23b34bd1a6d457d20a0a486
+#	new file:   Library/metadata/bc/bc77f283a23b34bd1a6d457d20a0a486.info
+#	new file:   Library/metadata/bc/bcd4c75b77dde4af2bedb77a87910a4e
+#	new file:   Library/metadata/bc/bcd4c75b77dde4af2bedb77a87910a4e.info
+#	new file:   Library/metadata/bd/bde70524fb8d946299b937b9667764e3
+#	new file:   Library/metadata/bd/bde70524fb8d946299b937b9667764e3.info
+#	new file:   Library/metadata/bf/bf234ab4221414ff98f788b3b3101dd7
+#	new file:   Library/metadata/bf/bf234ab4221414ff98f788b3b3101dd7.info
+#	new file:   Library/metadata/bf/bf72295b9e51b8c4f964d51010eed7b8
+#	new file:   Library/metadata/bf/bf72295b9e51b8c4f964d51010eed7b8.info
+#	new file:   Library/metadata/c2/c24b13e2b0b704dd4838c14a941131ac
+#	new file:   Library/metadata/c2/c24b13e2b0b704dd4838c14a941131ac.info
+#	new file:   Library/metadata/c3/c3742c0dfbb25494a832962167395004
+#	new file:   Library/metadata/c3/c3742c0dfbb25494a832962167395004.info
+#	new file:   Library/metadata/c3/c376e31f6e44549d5832241143ce28ad
+#	new file:   Library/metadata/c3/c376e31f6e44549d5832241143ce28ad.info
+#	new file:   Library/metadata/c4/c423db63932304f18b14e554df48899f
+#	new file:   Library/metadata/c4/c423db63932304f18b14e554df48899f.info
+#	new file:   Library/metadata/c4/c439d81bc93fb41f2ac592faeb18a4f8
+#	new file:   Library/metadata/c4/c439d81bc93fb41f2ac592faeb18a4f8.info
+#	new file:   Library/metadata/c4/c483432d5fb97449488986d00e047c9e
+#	new file:   Library/metadata/c4/c483432d5fb97449488986d00e047c9e.info
+#	new file:   Library/metadata/c6/c61177a29fb174cf787cedb66c6b212a
+#	new file:   Library/metadata/c6/c61177a29fb174cf787cedb66c6b212a.info
+#	new file:   Library/metadata/c6/c67a72e8a33534836af5087225242dcc
+#	new file:   Library/metadata/c6/c67a72e8a33534836af5087225242dcc.info
+#	new file:   Library/metadata/c8/c8b49241a2e3846038091868ad94e212
+#	new file:   Library/metadata/c8/c8b49241a2e3846038091868ad94e212.info
+#	new file:   Library/metadata/c9/c936906950dc14f789170b7cd91cea2a
+#	new file:   Library/metadata/c9/c936906950dc14f789170b7cd91cea2a.info
+#	new file:   Library/metadata/c9/c9ca981a19543415da4da8a094a55eda
+#	new file:   Library/metadata/c9/c9ca981a19543415da4da8a094a55eda.info
+#	new file:   Library/metadata/ca/caa99de962cfce14c8ff4120ae942c2b
+#	new file:   Library/metadata/ca/caa99de962cfce14c8ff4120ae942c2b.info
+#	new file:   Library/metadata/cd/cd30d7929d8a04745ba202b6be5b39f7
+#	new file:   Library/metadata/cd/cd30d7929d8a04745ba202b6be5b39f7.info
+#	new file:   Library/metadata/cd/cdd2e64c915894cc399242a2c6363f65
+#	new file:   Library/metadata/cd/cdd2e64c915894cc399242a2c6363f65.info
+#	new file:   Library/metadata/cd/cde73e1e042844e6183faefad4b79a99
+#	new file:   Library/metadata/cd/cde73e1e042844e6183faefad4b79a99.info
+#	new file:   Library/metadata/cf/cf3b52f7e608a49b9854fbc3769a1c9e
+#	new file:   Library/metadata/cf/cf3b52f7e608a49b9854fbc3769a1c9e.info
+#	new file:   Library/metadata/d0/d0dfbe0fd23234b22851cbd5061c1db7
+#	new file:   Library/metadata/d0/d0dfbe0fd23234b22851cbd5061c1db7.info
+#	new file:   Library/metadata/d0/d0e93c10fd5bb4ae19ad54ad461682ca
+#	new file:   Library/metadata/d0/d0e93c10fd5bb4ae19ad54ad461682ca.info
+#	new file:   Library/metadata/d1/d15d620fe7f2a491ea8e6f7c69f0f529
+#	new file:   Library/metadata/d1/d15d620fe7f2a491ea8e6f7c69f0f529.info
+#	new file:   Library/metadata/d1/d1af98ef5584a1f4dbdf924bef12b373
+#	new file:   Library/metadata/d1/d1af98ef5584a1f4dbdf924bef12b373.info
+#	new file:   Library/metadata/d1/d1afea7f9114e4e7ca0d88aa303d35ec
+#	new file:   Library/metadata/d1/d1afea7f9114e4e7ca0d88aa303d35ec.info
+#	new file:   Library/metadata/d2/d2b83268b8bbe47f1ab4c460b7e312fd
+#	new file:   Library/metadata/d2/d2b83268b8bbe47f1ab4c460b7e312fd.info
+#	new file:   Library/metadata/d7/d74ec80305186442a84c07a8130428f9
+#	new file:   Library/metadata/d7/d74ec80305186442a84c07a8130428f9.info
+#	new file:   Library/metadata/d8/d881fbd48290840c9bdef94b4b9474b8
+#	new file:   Library/metadata/d8/d881fbd48290840c9bdef94b4b9474b8.info
+#	new file:   Library/metadata/d9/d962072e9bc8b440ebe30318257f6138
+#	new file:   Library/metadata/d9/d962072e9bc8b440ebe30318257f6138.info
+#	new file:   Library/metadata/da/da17a9d7684ff47388beeb2be0f142d8
+#	new file:   Library/metadata/da/da17a9d7684ff47388beeb2be0f142d8.info
+#	new file:   Library/metadata/da/daa08fa53d4174e469c93c510414e4ee
+#	new file:   Library/metadata/da/daa08fa53d4174e469c93c510414e4ee.info
+#	new file:   Library/metadata/da/dac7d49a3c8b64e1791c8e9d1a46ee44
+#	new file:   Library/metadata/da/dac7d49a3c8b64e1791c8e9d1a46ee44.info
+#	new file:   Library/metadata/dc/dc8b3b588ec3a4944ae6247d34adae08
+#	new file:   Library/metadata/dc/dc8b3b588ec3a4944ae6247d34adae08.info
+#	new file:   Library/metadata/e5/e533b8b7a4ac7494baa4f08c1fbc529d
+#	new file:   Library/metadata/e5/e533b8b7a4ac7494baa4f08c1fbc529d.info
+#	new file:   Library/metadata/e5/e56823eeb31164d408f03b6c0106e317
+#	new file:   Library/metadata/e5/e56823eeb31164d408f03b6c0106e317.info
+#	new file:   Library/metadata/e6/e6c30c235b72e4a2091d5ab73731a1b8
+#	new file:   Library/metadata/e6/e6c30c235b72e4a2091d5ab73731a1b8.info
+#	new file:   Library/metadata/e8/e8cf969659daa4834b57701a963c1429
+#	new file:   Library/metadata/e8/e8cf969659daa4834b57701a963c1429.info
+#	new file:   Library/metadata/e9/e985af1f7e1d14dca8ebfbe15f7db883
+#	new file:   Library/metadata/e9/e985af1f7e1d14dca8ebfbe15f7db883.info
+#	new file:   Library/metadata/e9/e9fceac7966094ff2b794764d9089b60
+#	new file:   Library/metadata/e9/e9fceac7966094ff2b794764d9089b60.info
+#	new file:   Library/metadata/ea/ea072846279414ebfafc81b3bffc73de
+#	new file:   Library/metadata/ea/ea072846279414ebfafc81b3bffc73de.info
+#	new file:   Library/metadata/eb/eb6b5084ae32f427c9aa842f6ebfad68
+#	new file:   Library/metadata/eb/eb6b5084ae32f427c9aa842f6ebfad68.info
+#	new file:   Library/metadata/ec/ec41a5902de064392849ac2695df1a90
+#	new file:   Library/metadata/ec/ec41a5902de064392849ac2695df1a90.info
+#	new file:   Library/metadata/ed/ed9454d608f504896a66bbe81cb6e09d
+#	new file:   Library/metadata/ed/ed9454d608f504896a66bbe81cb6e09d.info
+#	new file:   Library/metadata/ee/ee545b364bb14494fb9ddd09c9a3de31
+#	new file:   Library/metadata/ee/ee545b364bb14494fb9ddd09c9a3de31.info
+#	new file:   Library/metadata/f1/f12ea2d01dc1f4624a6ebfabca2f351d
+#	new file:   Library/metadata/f1/f12ea2d01dc1f4624a6ebfabca2f351d.info
+#	new file:   Library/metadata/f2/f2741a682924340b99ab443b9849606f
+#	new file:   Library/metadata/f2/f2741a682924340b99ab443b9849606f.info
+#	new file:   Library/metadata/f4/f408840dd94e34843b025896125d8e51
+#	new file:   Library/metadata/f4/f408840dd94e34843b025896125d8e51.info
+#	new file:   Library/metadata/f5/f5743e8f0a0134a76813c72f0e73c26e
+#	new file:   Library/metadata/f5/f5743e8f0a0134a76813c72f0e73c26e.info
+#	new file:   Library/metadata/f5/f5f67c52d1564df4a8936ccd202a3bd8
+#	new file:   Library/metadata/f5/f5f67c52d1564df4a8936ccd202a3bd8.info
+#	new file:   Library/metadata/f5/f5f828b2c07614bc1a57c22f365de53a
+#	new file:   Library/metadata/f5/f5f828b2c07614bc1a57c22f365de53a.info
+#	new file:   Library/metadata/f7/f747ef48e56d24f5cbc63d171d9b4a48
+#	new file:   Library/metadata/f7/f747ef48e56d24f5cbc63d171d9b4a48.info
+#	new file:   Library/metadata/f8/f86d48ab71f3e42a480f25941d29de54
+#	new file:   Library/metadata/f8/f86d48ab71f3e42a480f25941d29de54.info
+#	new file:   Library/metadata/fa/fae4ee319a9964371a06ae80583c767a
+#	new file:   Library/metadata/fa/fae4ee319a9964371a06ae80583c767a.info
+#	new file:   Library/metadata/fb/fbba7b214f11741ebbe7af4a32675b9d
+#	new file:   Library/metadata/fb/fbba7b214f11741ebbe7af4a32675b9d.info
+#	new file:   Library/metadata/fb/fbd560bc4527648a4ba610926e956102
+#	new file:   Library/metadata/fb/fbd560bc4527648a4ba610926e956102.info
+#	new file:   Library/metadata/fe/fec0a117b9c7e4ff9bf0998b672342b7
+#	new file:   Library/metadata/fe/fec0a117b9c7e4ff9bf0998b672342b7.info
+#	new file:   Library/metadata/ff/ffd43186f42dfd544be09a549f78023f
+#	new file:   Library/metadata/ff/ffd43186f42dfd544be09a549f78023f.info
+#	new file:   Library/shadercompiler-UnityShaderCompiler.exe0.log
+#	new file:   ProjectSettings/AudioManager.asset
+#	new file:   ProjectSettings/ClusterInputManager.asset
+#	new file:   ProjectSettings/DynamicsManager.asset
+#	new file:   ProjectSettings/EditorBuildSettings.asset
+#	new file:   ProjectSettings/EditorSettings.asset
+#	new file:   ProjectSettings/GraphicsSettings.asset
+#	new file:   ProjectSettings/InputManager.asset
+#	new file:   ProjectSettings/NavMeshAreas.asset
+#	new file:   ProjectSettings/NetworkManager.asset
+#	new file:   ProjectSettings/Physics2DSettings.asset
+#	new file:   ProjectSettings/ProjectSettings.asset
+#	new file:   ProjectSettings/ProjectVersion.txt
+#	new file:   ProjectSettings/QualitySettings.asset
+#	new file:   ProjectSettings/TagManager.asset
+#	new file:   ProjectSettings/TimeManager.asset
+#	new file:   ProjectSettings/UnityAdsSettings.asset
+#	new file:   ProjectSettings/UnityConnectSettings.asset
+#	new file:   SpellsAreBack.CSharp.csproj
+#	new file:   SpellsAreBack.sln
+#	new file:   obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#
+

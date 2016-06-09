@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class CastSoulArrows : MonoBehaviour {
 
     //Objects
-    public Transform target;
     public GameObject projectilePrefab;
 
     //Variable Control
@@ -16,6 +15,7 @@ public class CastSoulArrows : MonoBehaviour {
     public float trackingValue = 0.8f;
 
     //private variables
+    private Transform target;
     private List<GameObject> livingProjectiles;
     private bool castedSpell;
     private float progressionTime;
@@ -23,24 +23,30 @@ public class CastSoulArrows : MonoBehaviour {
     private Vector3 startPos;
     private Vector3 originalTargetPos;
     private Vector3 currTargetPos;
+    private GameObject groundRune;
 
     void Start() {
         livingProjectiles = new List<GameObject>();
         progressionTime = 0;
         castedSpell = false;
         FindTargetNearby(transform.position, radius);
+        if (target == null)
+            Destroy(this.gameObject, 0.5f);
         startPos = transform.position;
         castedSpell = true;
+        groundRune = this.transform.FindChild("GroundEffect").gameObject;
+        groundRune.transform.localScale = groundRune.transform.localScale * radius * 2.5f;
     }
 
     void Update()
     {
-       
         if (target != null)
         {
-            currTargetPos = target.position;
-            if(castedSpell == true)
+            if (castedSpell == true)
+            {
+                TrackingCheck();
                 ManageProjectiles();
+            }
         }
     }
 
@@ -63,7 +69,7 @@ public class CastSoulArrows : MonoBehaviour {
         }
         else
         {
-            currSpeed = speed * Mathf.Pow((1 + 2f), progressionTime);
+            currSpeed = speed * Mathf.Pow(5, progressionTime);
             progressionTime += 0.001f * currSpeed;
 
             NewProjectilePosition();
@@ -72,15 +78,17 @@ public class CastSoulArrows : MonoBehaviour {
 
     private void NewProjectilePosition()
     {
+        
         for (int i = 0; i < livingProjectiles.Count; i++)
         {
-            Vector3 BezierPointVector = RotateVector(this.transform.right * 5, 180 / (livingProjectiles.Count-1) * i);
+            Vector3 BezierPointVector = RotateVector(this.transform.right * pathAngling, (180 / (livingProjectiles.Count-1)) * i);
 
             Debug.DrawRay(startPos, BezierPointVector, Color.yellow);
 
             Vector3 newPosition = Mathf.Pow((1 - progressionTime), 2) * startPos + 2 * (1 - progressionTime) * progressionTime *
-            (startPos + BezierPointVector) * pathAngling +
+            (startPos + BezierPointVector) +
                 Mathf.Pow(progressionTime, 2) * currTargetPos;
+
             Vector3 projectileDirection = newPosition - livingProjectiles[i].transform.position;
 
             Debug.DrawLine(startPos, currTargetPos);
@@ -118,9 +126,9 @@ public class CastSoulArrows : MonoBehaviour {
 
     private void TrackingCheck()
     {
-        if(Vector3.Distance(target.position, originalTargetPos) > trackingValue)
+        if(Vector3.Distance(target.position, originalTargetPos) < trackingValue)
         {
-
+            currTargetPos = target.position;
         }
     }
 
@@ -139,10 +147,19 @@ public class CastSoulArrows : MonoBehaviour {
                 {
                     closestDist = sphereHit[i].distance;
                     target = sphereHit[i].collider.transform;
-                    originalTargetPos = currTargetPos;
+                    currTargetPos = target.position;
+                    originalTargetPos = target.position;
                 }
             }
         }
+
+        Vector3 dirToTarget = currTargetPos - this.transform.position;
+        dirToTarget = new Vector3(dirToTarget.x, 0, dirToTarget.z);
+        this.transform.rotation = Quaternion.FromToRotation(this.transform.forward, dirToTarget);
+
+        
+        
+        //this.transform.LookAt(target);
 
     }
 

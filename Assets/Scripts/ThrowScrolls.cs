@@ -11,13 +11,12 @@ public class ThrowScrolls : MonoBehaviour {
     void Start () {
     }
 	
-	// Update is called once per frame
-	void Update () {
-        if(Input.GetMouseButtonDown(0)){
-            GameObject instScroll = (GameObject)Instantiate(scroll, this.transform.position, Quaternion.identity);
-            scrollRB = instScroll.GetComponent<Rigidbody>();
-            scrollRB.AddForce((transform.forward + transform.up) * throwStrength);
-            scrollRB.AddTorque(transform.right * 10000);
-        }
+    public void ThrowScroll()
+    {
+        GameObject instScroll = (GameObject)Instantiate(scroll, this.transform.position, Quaternion.identity);
+        scrollRB = instScroll.GetComponent<Rigidbody>();
+        scrollRB.AddForce((transform.forward + transform.up) * throwStrength);
+        scrollRB.AddTorque(transform.right * 10000);
+
     }
 }
