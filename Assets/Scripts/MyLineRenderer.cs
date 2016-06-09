@@ -5,7 +5,6 @@ public class MyLineRenderer : MonoBehaviour {
 
     public float lineWidth = 1f;
 
-    private Vector3 firstPoint;
     private List<Vector3> points;
     private List<Vector3> newVertices;
     private List<int> newTriangles;
@@ -36,18 +35,7 @@ public class MyLineRenderer : MonoBehaviour {
     {
         if (points.Count > 0 && newPos == points[points.Count - 1])
             return;
-
-        if (points.Count <= 0)
-        {
-            firstPoint = newPos;
-            newPos -= newPos;
-        }
-        else
-        {
-            newPos -= firstPoint;
-        }
-
-        newPos = this.transform.localToWorldMatrix * newPos;
+        
         points.Add(newPos);
 
         if (points.Count == 1)
@@ -63,10 +51,10 @@ public class MyLineRenderer : MonoBehaviour {
         Vector3 c = lastPoint + side * ((lineWidth * 0.05f) / -2); //left bottom
         Vector3 d = newPos + side * ((lineWidth * 0.05f) / -2); //right bottom
 
-        newVertices.Add(a);
-        newVertices.Add(b);
-        newVertices.Add(c);
-        newVertices.Add(d);
+        newVertices.Add(this.transform.worldToLocalMatrix.MultiplyPoint(a));
+        newVertices.Add(this.transform.worldToLocalMatrix.MultiplyPoint(b));
+        newVertices.Add(this.transform.worldToLocalMatrix.MultiplyPoint(c));
+        newVertices.Add(this.transform.worldToLocalMatrix.MultiplyPoint(d));
 
         mesh.vertices = newVertices.ToArray();
 
@@ -123,7 +111,7 @@ public class MyLineRenderer : MonoBehaviour {
     /*
     void OnDrawGizmos()
     {
-        Vector3 size = new Vector3(0.001f, 0.001f, 0.001f);
+        Vector3 size = new Vector3(0.003f, 0.003f, 0.003f);
 
         Gizmos.color = Color.red;
         for (int i = 0; i < points.Count; i++) {
@@ -132,8 +120,8 @@ public class MyLineRenderer : MonoBehaviour {
 
         Gizmos.color = Color.green;
         for (int i = 0; i < newVertices.Count; i++)
-            Gizmos.DrawSphere(newVertices[i], 0.0005f);
-    }*/
-
+            Gizmos.DrawSphere(newVertices[i], 0.001f);
+    }
+    */
 
 }
