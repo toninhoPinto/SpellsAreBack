@@ -61,6 +61,14 @@ using System;
 
 namespace PDollarGestureRecognizer
 {
+
+    public struct SizeGesture
+    {
+        public float minX;
+        public float maxX;
+        public float minY;
+        public float maxY;
+    }
     /// <summary>
     /// Implements a gesture as a cloud of points (i.e., an unordered set of points).
     /// Gestures are normalized with respect to scale, translated to origin, and resampled into a fixed number of 32 points.
@@ -69,6 +77,7 @@ namespace PDollarGestureRecognizer
     {
         public Point[] Points = null;            // gesture points (normalized)
         public string Name = "";                 // gesture class
+        public SizeGesture size;
         private const int SAMPLING_RESOLUTION = 32;
 
         /// <summary>
@@ -78,7 +87,8 @@ namespace PDollarGestureRecognizer
         public Gesture(Point[] points, string gestureName = "")
         {
             this.Name = gestureName;
-            
+
+            size = new SizeGesture();
             // normalizes the array of points with respect to scale, origin, and number of points
             this.Points = Scale(points);
             this.Points = TranslateTo(Points, Centroid(Points));
@@ -102,7 +112,10 @@ namespace PDollarGestureRecognizer
                 if (maxx < points[i].X) maxx = points[i].X;
                 if (maxy < points[i].Y) maxy = points[i].Y;
             }
-
+            size.minX = minx;
+            size.maxX = maxx;
+            size.minY = miny;
+            size.maxY = maxy;
             Point[] newPoints = new Point[points.Length];
             float scale = Math.Max(maxx - minx, maxy - miny);
             for (int i = 0; i < points.Length; i++)

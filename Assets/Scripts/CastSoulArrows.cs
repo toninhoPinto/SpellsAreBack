@@ -6,6 +6,7 @@ public class CastSoulArrows : MonoBehaviour {
 
     //Objects
     public GameObject projectilePrefab;
+    public SpellFXManager spellFXManager;
 
     //Variable Control
     public int nProjectiles = 1;
@@ -26,6 +27,7 @@ public class CastSoulArrows : MonoBehaviour {
     private GameObject groundRune;
 
     void Start() {
+        spellFXManager.radius = radius;
         livingProjectiles = new List<GameObject>();
         progressionTime = 0;
         castedSpell = false;
@@ -34,15 +36,13 @@ public class CastSoulArrows : MonoBehaviour {
             Destroy(this.gameObject, 0.5f);
         startPos = transform.position;
         castedSpell = true;
-        groundRune = this.transform.FindChild("GroundEffect").gameObject;
-        groundRune.transform.localScale = groundRune.transform.localScale * radius * 2.5f;
     }
 
     void Update()
     {
         if (target != null)
         {
-            if (castedSpell == true)
+            if (castedSpell && spellFXManager.ready)
             {
                 TrackingCheck();
                 ManageProjectiles();

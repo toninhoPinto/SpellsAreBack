@@ -102,7 +102,7 @@ namespace PDollarGestureRecognizer
                 sw.WriteLine("<Gesture Name = \"{0}\">", gestureName);
                 for (int i = 0; i < points.Length; i++)
                 {
-                    sw.WriteLine("\t\t<Point X = \"{0}\" Y = \"{1}\" T = \"0\" Pressure = \"0\" />",
+                    sw.WriteLine("\t\t<Point X = \"{0}\" Y = \"{1}\" T = \"0\" />",
                         points[i].X, points[i].Y
                     );
                 }

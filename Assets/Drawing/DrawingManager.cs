@@ -6,28 +6,32 @@ using PDollarGestureRecognizer;
 using System.IO;
 
 public class DrawingManager : MonoBehaviour {
-    private MyMouseLook mouselookScript;
-    private MyCharController charControllerScript;
 
-    public GameObject canvas;
+    //Drawing related
     public float chalkTotal = 100f;
     public float chalkAmmount = 100f;
     public float chalkSpendRate = 1f;
 
-    public bool drawing;
-    public bool mouseInside;
-    Vector3 mousePos;
+    private bool drawing;
+    private bool mouseInside;
+    private Vector3 mousePos;
+    private bool newLine;
+
+    //Recognition related
     private List<List<Point>> newGestures;
     private List<Point> currLinePoints;
-    private bool newLine;
+    private List<Gesture> inputGestures;
     private List<Result> resultingGestures;
     private List<Gesture> trainingSet = new List<Gesture>();
 
+    //Objects
+    public GameObject canvas;
     public MyLineRenderer currentGestureLineRenderer;
-    public float ZLineCoord;
     public GameObject character;
     public GameObject scroll;
     public Slider chalkSlide;
+    private MyMouseLook mouselookScript;
+    private MyCharController charControllerScript;
 
     // Use this for initialization
     void Start () {
@@ -37,6 +41,8 @@ public class DrawingManager : MonoBehaviour {
         mouseInside = false;
         currLinePoints = new List<Point>();
         newGestures = new List<List<Point>>();
+        inputGestures = new List<Gesture>();
+        resultingGestures = new List<Result>();
 
         //Load pre-made gestures
         TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet/10-stylus-MEDIUM/");
@@ -61,7 +67,6 @@ public class DrawingManager : MonoBehaviour {
             canvas.SetActive(!canvas.activeSelf);
             scroll.SetActive(!scroll.activeSelf);
             mouseInside = false;
-            ZLineCoord = scroll.transform.position.z;
             if (!drawing)
                 currentGestureLineRenderer.resetMesh();
         }
@@ -77,7 +82,7 @@ public class DrawingManager : MonoBehaviour {
             }
             else mouseInside = false;
 
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(0) && currLinePoints.Count>0)
             {
                 newLine = true;
                 newGestures.Add(currLinePoints);
@@ -110,8 +115,19 @@ public class DrawingManager : MonoBehaviour {
     public void recognizeLatestGesture(List<Point> gesture)
     {
         Gesture candidate = new Gesture(gesture.ToArray());
+        inputGestures.Add(candidate);
         Result gestureResult = PointCloudRecognizer.Classify(candidate, trainingSet.ToArray());
-        Debug.Log(gestureResult.GestureClass);
+        if (gestureResult.Score >= 0.5) {
+            resultingGestures.Add(gestureResult);
+            candidate.Name = gestureResult.GestureClass;
+            Debug.Log(candidate.Name);
+            Debug.Log(gestureResult.Score);
+        }
+    }
+
+    public void recognizeFullSpell()
+    {
+
     }
 
 }
