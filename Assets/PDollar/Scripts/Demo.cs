@@ -13,7 +13,6 @@ public class Demo : MonoBehaviour {
 	private List<Gesture> trainingSet = new List<Gesture>();
 
 	private List<Point> points = new List<Point>();
-	private int strokeId = -1;
 
 	private Vector3 virtualKeyPosition = Vector2.zero;
 	private Rect drawArea;
@@ -58,7 +57,6 @@ public class Demo : MonoBehaviour {
 				if (recognized) {
 
 					recognized = false;
-					strokeId = -1;
 
 					points.Clear();
 
@@ -70,8 +68,6 @@ public class Demo : MonoBehaviour {
 
 					gestureLinesRenderer.Clear();
 				}
-
-				++strokeId;
 				
 				Transform tmpGesture = Instantiate(gestureOnScreenPrefab, transform.position, transform.rotation) as Transform;
 				currentGestureLineRenderer = tmpGesture.GetComponent<LineRenderer>();

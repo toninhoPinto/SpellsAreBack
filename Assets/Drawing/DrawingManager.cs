@@ -49,6 +49,7 @@ public class DrawingManager : MonoBehaviour {
         foreach (TextAsset gestureXml in gesturesXml)
             trainingSet.Add(GestureIO.ReadGestureFromXML(gestureXml.text));
 
+        Debug.Log(Application.persistentDataPath);
         //Load user custom gestures
         string[] filePaths = Directory.GetFiles(Application.persistentDataPath, "*.xml");
         foreach (string filePath in filePaths)
@@ -84,6 +85,7 @@ public class DrawingManager : MonoBehaviour {
 
             if (Input.GetMouseButtonUp(0) && currLinePoints.Count>0)
             {
+                currentGestureLineRenderer.finishCurrLine();
                 newLine = true;
                 newGestures.Add(currLinePoints);
                 recognizeLatestGesture(currLinePoints);
@@ -95,7 +97,7 @@ public class DrawingManager : MonoBehaviour {
                 Vector3 camVector = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane + 0.5f));
                 if (Input.GetMouseButtonDown(0))
                 {
-                    currLinePoints.Add(new Point(mousePos.x, mousePos.y));
+                    currLinePoints.Add(new Point(mousePos.x, -mousePos.y));
                     currentGestureLineRenderer.SetPosition(camVector, newLine);
                     newLine = false;
                 }
@@ -104,7 +106,7 @@ public class DrawingManager : MonoBehaviour {
                 {
                     chalkAmmount -= chalkSpendRate * 15 * Time.deltaTime;
                     chalkSlide.value = chalkAmmount/chalkTotal;
-                    currLinePoints.Add(new Point(mousePos.x, mousePos.y));
+                    currLinePoints.Add(new Point(mousePos.x, -mousePos.y));
                     currentGestureLineRenderer.SetPosition(camVector, newLine);
                 }
             }
@@ -128,6 +130,11 @@ public class DrawingManager : MonoBehaviour {
     public void recognizeFullSpell()
     {
 
+    }
+
+    public void saveGesture()
+    {
+        //GestureIO.WriteGesture(currLinePoints.ToArray(), newGestureName, fileName);
     }
 
 }

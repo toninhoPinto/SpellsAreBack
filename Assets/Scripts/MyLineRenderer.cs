@@ -4,6 +4,8 @@ using System.Collections.Generic;
 public class MyLineRenderer : MonoBehaviour {
 
     public float lineWidth = 1f;
+    public Material drawingMaterial;
+    public Material finishedMaterial;
 
     private List<Vector3> points;
     private List<Vector3> newVertices;
@@ -11,12 +13,14 @@ public class MyLineRenderer : MonoBehaviour {
     private List<Vector2> newUV;
     private float pointsBeforeNewLine;
 
+    private int subMesh = 0;
     private Mesh mesh;
     private MeshRenderer meshRenderer;
     private MeshFilter meshFilter;
 
     void Start()
     {
+        meshRenderer = GetComponent<MeshRenderer>();
         resetMesh();
     }
 
@@ -31,6 +35,17 @@ public class MyLineRenderer : MonoBehaviour {
         newTriangles = new List<int>();
         newUV = new List<Vector2>();
         pointsBeforeNewLine = 0;
+        subMesh = 0;
+        mesh.subMeshCount = 1;
+    }
+
+    public void finishCurrLine()
+    {
+        Material[] newMaterials = meshRenderer.materials;
+        newMaterials[newMaterials.Length - 1] = finishedMaterial;
+        meshRenderer.materials = newMaterials;
+        subMesh++;
+        mesh.subMeshCount = subMesh + 1;
     }
 
     public void SetPosition(Vector3 newPos, bool newLine)
@@ -39,7 +54,20 @@ public class MyLineRenderer : MonoBehaviour {
             return;
 
         if (newLine)
+        {
+            Material[] newMaterials = new Material[meshRenderer.materials.Length + 1];
+            for (int i = 0; i < meshRenderer.materials.Length; i++)
+            {
+                newMaterials[i] = meshRenderer.materials[i];
+            }
+            newMaterials[newMaterials.Length - 1] = drawingMaterial;
+            meshRenderer.materials = newMaterials;
+            for (int i = 0; i < meshRenderer.materials.Length; i++)
+            {
+                Debug.Log(meshRenderer.materials[i]);
+            }
             pointsBeforeNewLine = points.Count;
+        }
 
         points.Add(newPos);
 
@@ -90,7 +118,7 @@ public class MyLineRenderer : MonoBehaviour {
             newTriangles.Add(t2b);
             newTriangles.Add(t2c);
         }
-        mesh.triangles = newTriangles.ToArray();
+        mesh.SetTriangles(newTriangles.ToArray(), subMesh);
 
         newUV.Add(new Vector2(0,1));
         newUV.Add(new Vector2(0,0));

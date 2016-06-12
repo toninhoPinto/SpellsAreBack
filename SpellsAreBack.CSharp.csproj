@@ -196,7 +196,6 @@
     <Compile Include="Assets\Scripts\RuneAnimation.cs" />
     <Compile Include="Assets\Scripts\Scroll.cs" />
     <Compile Include="Assets\Scripts\SpellFXManager.cs" />
-    <Compile Include="Assets\Scripts\SpellRecipe.cs" />
     <Compile Include="Assets\Scripts\SpellRecognizer.cs" />
     <Compile Include="Assets\Scripts\TestMoving.cs" />
     <Compile Include="Assets\Scripts\ThrowScrolls.cs" />
