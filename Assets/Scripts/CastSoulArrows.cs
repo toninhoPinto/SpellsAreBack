@@ -54,6 +54,9 @@ public class CastSoulArrows : MonoBehaviour {
     {
         if (progressionTime >= 1.0f)
         {
+            //Debug.Log(Vector3.Distance(livingProjectiles[0].transform.position, target.position));
+            if (Vector3.Distance(livingProjectiles[0].transform.position , target.position) <= 0.5f)
+                spellFXManager.InstantiateCollisionParticles(target.position);
             castedSpell = false;
             KillProjectile();
             progressionTime = 0.0f;

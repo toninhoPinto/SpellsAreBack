@@ -184,12 +184,15 @@
     <Compile Include="Assets\PDollar\Scripts\PDollarGestureRecognizer\Point.cs" />
     <Compile Include="Assets\PDollar\Scripts\PDollarGestureRecognizer\PointCloudRecognizer.cs" />
     <Compile Include="Assets\PDollar\Scripts\PDollarGestureRecognizer\Result.cs" />
+    <Compile Include="Assets\Scripts\AutoDestroyParticleSystem.cs" />
+    <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\CastSoulArrows.cs" />
     <Compile Include="Assets\Scripts\ExplosionSpell.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\MyCharController.cs" />
     <Compile Include="Assets\Scripts\MyLineRenderer.cs" />
     <Compile Include="Assets\Scripts\MyMouseLook.cs" />
+    <Compile Include="Assets\Scripts\RayTransparencyMatching.cs" />
     <Compile Include="Assets\Scripts\RuneAnimation.cs" />
     <Compile Include="Assets\Scripts\Scroll.cs" />
     <Compile Include="Assets\Scripts\SpellFXManager.cs" />
