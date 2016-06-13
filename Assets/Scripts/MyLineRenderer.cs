@@ -10,10 +10,11 @@ public class MyLineRenderer : MonoBehaviour {
     private List<Vector3> points;
     private List<Vector3> newVertices;
     private List<int> newTriangles;
+    private List<int> currTriangles;
     private List<Vector2> newUV;
     private float pointsBeforeNewLine;
 
-    private int subMesh = 0;
+    public int subMesh = 0;
     private Mesh mesh;
     private MeshRenderer meshRenderer;
     private MeshFilter meshFilter;
@@ -26,6 +27,7 @@ public class MyLineRenderer : MonoBehaviour {
 
     public void resetMesh()
     {
+        currTriangles = new List<int>();
         mesh = new Mesh();
         mesh.Clear();
         mesh.name = "drawingLine";
@@ -41,11 +43,9 @@ public class MyLineRenderer : MonoBehaviour {
 
     public void finishCurrLine()
     {
-        Material[] newMaterials = meshRenderer.materials;
-        newMaterials[newMaterials.Length - 1] = finishedMaterial;
-        meshRenderer.materials = newMaterials;
-        subMesh++;
-        mesh.subMeshCount = subMesh + 1;
+            Material[] newMaterials = meshRenderer.materials;
+            newMaterials[newMaterials.Length - 1] = finishedMaterial;
+            meshRenderer.materials = newMaterials;
     }
 
     public void SetPosition(Vector3 newPos, bool newLine)
@@ -55,6 +55,8 @@ public class MyLineRenderer : MonoBehaviour {
 
         if (newLine)
         {
+            subMesh++;
+            mesh.subMeshCount = subMesh + 1;
             Material[] newMaterials = new Material[meshRenderer.materials.Length + 1];
             for (int i = 0; i < meshRenderer.materials.Length; i++)
             {
@@ -62,10 +64,7 @@ public class MyLineRenderer : MonoBehaviour {
             }
             newMaterials[newMaterials.Length - 1] = drawingMaterial;
             meshRenderer.materials = newMaterials;
-            for (int i = 0; i < meshRenderer.materials.Length; i++)
-            {
-                Debug.Log(meshRenderer.materials[i]);
-            }
+            currTriangles = new List<int>();
             pointsBeforeNewLine = points.Count;
         }
 
@@ -94,12 +93,14 @@ public class MyLineRenderer : MonoBehaviour {
         //tries
         if (points.Count - pointsBeforeNewLine == 2)
         {
-            newTriangles.Add(0);
-            newTriangles.Add(2);
-            newTriangles.Add(3);
-            newTriangles.Add(3);
-            newTriangles.Add(1);
-            newTriangles.Add(0);
+            currTriangles.Add(0);
+            currTriangles.Add(2);
+            currTriangles.Add(3);
+            currTriangles.Add(3);
+            currTriangles.Add(1);
+            currTriangles.Add(0);
+
+            newTriangles.AddRange(currTriangles);
         }
         else
         {
@@ -111,14 +112,16 @@ public class MyLineRenderer : MonoBehaviour {
             int t2b = newVertices.Count - 4;
             int t2c = newVertices.Count - 1;
 
-            newTriangles.Add(t1a);
-            newTriangles.Add(t1b);
-            newTriangles.Add(t1c);
-            newTriangles.Add(t2a);
-            newTriangles.Add(t2b);
-            newTriangles.Add(t2c);
+            currTriangles.Add(t1a);
+            currTriangles.Add(t1b);
+            currTriangles.Add(t1c);
+            currTriangles.Add(t2a);
+            currTriangles.Add(t2b);
+            currTriangles.Add(t2c);
+
+            newTriangles.AddRange(currTriangles);
         }
-        mesh.SetTriangles(newTriangles.ToArray(), subMesh);
+        mesh.SetTriangles(currTriangles.ToArray(), subMesh);
 
         newUV.Add(new Vector2(0,1));
         newUV.Add(new Vector2(0,0));
