@@ -129,7 +129,7 @@ public class DrawingManager : MonoBehaviour {
 
     public void recognizeFullSpell()
     {
-
+        GetComponent<SpellRecognizer>().RecognizeSpell(inputGestures, character.GetComponent<Inventory>());
     }
 
     public void saveGesture()
