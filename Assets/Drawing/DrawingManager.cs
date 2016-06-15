@@ -129,6 +129,10 @@ public class DrawingManager : MonoBehaviour {
         drawing = !drawing;
         mouselookScript.enabled = !mouselookScript.enabled;
         charControllerScript.enabled = !charControllerScript.enabled;
+        currLinePoints = new List<Point>();
+        newGestures = new List<List<Point>>();
+        inputGestures = new List<Gesture>();
+        resultingGestures = new List<Result>();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = !Cursor.visible;
         canvas.SetActive(!canvas.activeSelf);

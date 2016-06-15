@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Fire : MonoBehaviour {
+public class Fire : MonoBehaviour, Elements {
 
 	// Use this for initialization
 	void Start () {

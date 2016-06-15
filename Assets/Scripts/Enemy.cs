@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Water : MonoBehaviour, Elements{
-
-    public ParticleSystem fx;
+public class Enemy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
