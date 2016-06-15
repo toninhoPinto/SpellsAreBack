@@ -6,6 +6,7 @@ public class SummonSpell : MonoBehaviour {
     //Objects
     public SpellFXManager spellFXManager;
     public GameObject minion;
+    public int spawnNumber = 1;
 
     void Update()
     {
@@ -17,6 +18,13 @@ public class SummonSpell : MonoBehaviour {
 
     private void CastSpell()
     {
-        Instantiate(minion, this.transform.position, Quaternion.identity);
+        for(int i = 0; i < spawnNumber; i++)
+            Instantiate(minion, this.transform.position, Quaternion.identity);
     }
+
+    public void UpgradeSpell()
+    {
+        spawnNumber++;
+    }
+
 }

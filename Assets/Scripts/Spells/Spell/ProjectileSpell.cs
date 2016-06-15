@@ -51,12 +51,17 @@ public class ProjectileSpell : Spell {
         ManageProjectiles();
     }
 
+    private void CollidedWithEnemy()
+    {
+        spellFXManager.InstantiateCollisionParticles(target.position);
+    }
+
     public void ManageProjectiles()
     {
         if (progressionTime >= 1.0f)
         {
-            if (Vector3.Distance(livingProjectiles[0].transform.position , target.position) <= 0.5f)
-                spellFXManager.InstantiateCollisionParticles(target.position);
+            if (Vector3.Distance(livingProjectiles[0].transform.position, target.position) <= 0.5f)
+                CollidedWithEnemy();
             KillProjectile();
             progressionTime = 0.0f;
             currSpeed = speed;
@@ -152,11 +157,6 @@ public class ProjectileSpell : Spell {
         Vector3 dirToTarget = currTargetPos - this.transform.position;
         dirToTarget = new Vector3(dirToTarget.x, 0, dirToTarget.z);
         this.transform.rotation = Quaternion.FromToRotation(this.transform.forward, dirToTarget);
-
-        
-        
-        //this.transform.LookAt(target);
-
     }
 
     private Vector3 RotateVector(Vector3 vector, float angle)
@@ -169,4 +169,12 @@ public class ProjectileSpell : Spell {
     {
         Gizmos.DrawWireSphere(startPos, radius);
     }
+
+    public void UpgradeSpell()
+    {
+        trackingValue += 0.2f;
+        nProjectiles ++;
+    }
+
+
 }

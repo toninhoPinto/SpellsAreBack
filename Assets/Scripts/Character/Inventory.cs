@@ -12,12 +12,13 @@ public class Inventory : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        throwScroll.setSpellToThrow(spell);
         equipedSpells = new GameObject[4];
     }
 	
     public void addNewSpell(GameObject spell)
     {
+        Debug.Log(nextSpellPos);
+        throwScroll.setSpellToThrow(spell);
         equipedSpells[nextSpellPos] = spell;
         nextSpellPos++;
     }

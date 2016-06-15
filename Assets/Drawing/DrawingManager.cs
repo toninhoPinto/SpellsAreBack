@@ -60,16 +60,7 @@ public class DrawingManager : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            drawing = !drawing;
-            mouselookScript.enabled = !mouselookScript.enabled;
-            charControllerScript.enabled = !charControllerScript.enabled;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = !Cursor.visible;
-            canvas.SetActive(!canvas.activeSelf);
-            scroll.SetActive(!scroll.activeSelf);
-            mouseInside = false;
-            if (!drawing)
-                currentGestureLineRenderer.resetMesh();
+            closeDrawing();
         }
 
         if (drawing)
@@ -130,6 +121,21 @@ public class DrawingManager : MonoBehaviour {
     public void recognizeFullSpell()
     {
         GetComponent<SpellRecognizer>().RecognizeSpell(inputGestures, character.GetComponent<Inventory>());
+        closeDrawing();
+    }
+
+    private void closeDrawing()
+    {
+        drawing = !drawing;
+        mouselookScript.enabled = !mouselookScript.enabled;
+        charControllerScript.enabled = !charControllerScript.enabled;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = !Cursor.visible;
+        canvas.SetActive(!canvas.activeSelf);
+        scroll.SetActive(!scroll.activeSelf);
+        mouseInside = false;
+        if (!drawing)
+            currentGestureLineRenderer.resetMesh();
     }
 
     public void saveGesture()

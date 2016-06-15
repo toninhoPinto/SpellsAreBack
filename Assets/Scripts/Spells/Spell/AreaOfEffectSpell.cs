@@ -60,5 +60,10 @@ public class AreaOfEffectSpell : Spell {
         Gizmos.DrawWireSphere(transform.position, radius);
     }
 
+    public void UpgradeSpell()
+    {
+        radius += 2f;
+    }
+
 
 }

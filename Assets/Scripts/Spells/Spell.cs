@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Spell : MonoBehaviour {
 
+    Elements elementalBuff;
+
     // Use this for initialization
     void Start () {
 	

@@ -15,16 +15,27 @@ public class SpellRecognizer : MonoBehaviour {
     {
         GameObject newSpell = null;
         for (int i = 0; i < gestures.Count; i++) {
+
             if (gestures[i].Name.Equals("square"))
             {
+                if(newSpell == null)
+                    newSpell = (GameObject)Instantiate(Spells[1], transform.position, Quaternion.identity);
+                else if (newSpell.GetComponent<SummonSpell>() != null)
+                     newSpell.GetComponent<ProjectileSpell>().UpgradeSpell();
             }
             else if (gestures[i].Name.Equals("triangle"))
             {
-                newSpell = Spells[1];
+                if (newSpell == null)
+                    newSpell = (GameObject)Instantiate(Spells[1], transform.position, Quaternion.identity);
+                else if (newSpell.GetComponent<ProjectileSpell>() != null)
+                    newSpell.GetComponent<ProjectileSpell>().UpgradeSpell();
             }
             else if(gestures[i].Name.Equals("circle"))
             {
-                newSpell = Spells[2];
+                if (newSpell == null)
+                    newSpell = (GameObject)Instantiate(Spells[0], transform.position, Quaternion.identity);
+                else if(newSpell.GetComponent<AreaOfEffectSpell>() != null)
+                    newSpell.GetComponent<AreaOfEffectSpell>().UpgradeSpell();
             }
             else if(gestures[i].Name.Equals("semicircle"))
             {
@@ -53,9 +64,9 @@ public class SpellRecognizer : MonoBehaviour {
             else if(gestures[i].Name.Equals("death"))
             {
             }
-
-            inv.addNewSpell(newSpell);
         }
+        newSpell.SetActive(false);
+        inv.addNewSpell(newSpell);
     } 
 
 
